@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/temp
+/template
+
+# Jetbrains IDEs
+.idea/
+# Visual Studio Code
+.vscode/
