@@ -32,7 +32,7 @@ jobs:
 
       - run: npm install -g fsh-sushi
 
-      - run: ./_updatePublisher.sh
+      - run: ./_updatePublisher.sh -y
 
       - run: ./_genonce.sh
 
