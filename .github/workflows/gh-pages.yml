@@ -32,6 +32,8 @@ jobs:
 
       - run: npm install -g fsh-sushi
 
+      - run: ./_updatePublisher.sh
+
       - run: ./_genonce.sh
 
       - name: Deploy
