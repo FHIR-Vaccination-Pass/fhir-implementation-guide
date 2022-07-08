@@ -1,0 +1,130 @@
+{
+  "package": "com.github.fhirvaccinationpass.ig",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://example.org/StructureDefinition/vp-fulfilling-immunization",
+      "title": "FulfillingImmunization",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/vp-population-recommendation-extension",
+      "title": "PopulationRecommendationExtension",
+      "types": [
+        "Age",
+        "Age",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "Immunization": [
+      {
+        "url": "http://example.org/StructureDefinition/vp-immunization",
+        "title": "Immunization"
+      }
+    ],
+    "ImmunizationRecommendation": [
+      {
+        "url": "http://example.org/StructureDefinition/vp-immunization-recommendation",
+        "title": "ImmunizationRecommendation"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "http://example.org/StructureDefinition/vp-population-recommendation",
+        "title": "PopulationRecommendation"
+      }
+    ]
+  },
+  "usage": {
+    "http://example.org/StructureDefinition/vp-fulfilling-immunization": [
+      "ImmunizationRecommendation.recommendation"
+    ],
+    "http://example.org/StructureDefinition/vp-population-recommendation-extension": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

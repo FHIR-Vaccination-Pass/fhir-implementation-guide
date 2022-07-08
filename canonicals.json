@@ -1,0 +1,44 @@
+[
+  {
+    "id": "com.github.fhirvaccinationpass.ig",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/ImplementationGuide/com.github.fhirvaccinationpass.ig",
+    "version": "0.1.0",
+    "name": "FHIRVaccinationPassIG"
+  },
+  {
+    "id": "vp-fulfilling-immunization",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/vp-fulfilling-immunization",
+    "version": "0.1.0",
+    "name": "VPFulfillingImmunization"
+  },
+  {
+    "id": "vp-immunization",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/vp-immunization",
+    "version": "0.1.0",
+    "name": "VPImmunization"
+  },
+  {
+    "id": "vp-immunization-recommendation",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/vp-immunization-recommendation",
+    "version": "0.1.0",
+    "name": "VPImmunizationRecommendation"
+  },
+  {
+    "id": "vp-population-recommendation",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/vp-population-recommendation",
+    "version": "0.1.0",
+    "name": "VPPopulationRecommendation"
+  },
+  {
+    "id": "vp-population-recommendation-extension",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/vp-population-recommendation-extension",
+    "version": "0.1.0",
+    "name": "VPPopulationRecommendationExtension"
+  }
+]

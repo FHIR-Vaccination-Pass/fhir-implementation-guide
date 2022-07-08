@@ -1,0 +1,37 @@
+﻿FHIRVaccinationPassIG : Validation Results
+=========================================
+
+err = 4, warn = 12, info = 0
+IG Publisher Version: 1.1.122
+Generated Fri Jul 08 23:45:29 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = http://example.org)
+ Build Errors : 0 / 3 / 0
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/fsh-generated/resources/StructureDefinition-vp-fulfilling-immunization : 0 / 1 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/fsh-generated/resources/StructureDefinition-vp-immunization : 0 / 3 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/fsh-generated/resources/StructureDefinition-vp-immunization-recommendation : 4 / 3 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/fsh-generated/resources/StructureDefinition-vp-population-recommendation : 0 / 1 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/fsh-generated/resources/StructureDefinition-vp-population-recommendation-extension : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-population-recommendation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-fulfilling-immunization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-population-recommendation-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig.json ==
+== fsh-generated/resources/StructureDefinition-vp-fulfilling-immunization.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/vp-fulfilling-immunization'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-vp-immunization.json ==
+WARNING: StructureDefinition/vp-immunization: StructureDefinition.differential.element[1].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element Immunization.vaccineCode could not be resolved
+WARNING: StructureDefinition/vp-immunization: StructureDefinition.snapshot.element[12].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element Immunization.vaccineCode could not be resolved
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/vp-immunization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-vp-immunization-recommendation.json ==
+ERROR: StructureDefinition/vp-immunization-recommendation: StructureDefinition.snapshot.element[19].binding.valueSet: Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/vp-immunization-recommendation: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+WARNING: StructureDefinition/vp-immunization-recommendation: StructureDefinition.differential.element[3].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element ImmunizationRecommendation.recommendation.vaccineCode could not be resolved
+ERROR: StructureDefinition/vp-immunization-recommendation: StructureDefinition.differential.element[4].binding: The valueSet reference http://hl7.org/fhir/sid/icd-10 on element ImmunizationRecommendation.recommendation.targetDisease points to something that is not a value set (CodeSystem) 
+WARNING: StructureDefinition/vp-immunization-recommendation: StructureDefinition.snapshot.element[18].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element ImmunizationRecommendation.recommendation.vaccineCode could not be resolved
+ERROR: StructureDefinition/vp-immunization-recommendation: StructureDefinition.snapshot.element[19].binding: The valueSet reference http://hl7.org/fhir/sid/icd-10 on element ImmunizationRecommendation.recommendation.targetDisease points to something that is not a value set (CodeSystem) 
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/vp-immunization-recommendation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-vp-population-recommendation.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/vp-population-recommendation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-vp-population-recommendation-extension.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/vp-population-recommendation-extension'): The Implementation Guide contains no examples for this extension
