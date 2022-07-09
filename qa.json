@@ -1,9 +1,9 @@
 {
-  "url": "http://example.org/ImplementationGuide/com.github.fhirvaccinationpass.ig",
-  "name": "FHIRVaccinationPassIG",
-  "package-id": "com.github.fhirvaccinationpass.ig",
+  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide",
+  "name": "VPImplementationGuide",
+  "package-id": "vp-implementation-guide",
   "ig-ver": "0.1.0",
-  "date": "Fri, 08 Jul, 2022 23:45:11 +0000",
+  "date": "Sat, 09 Jul, 2022 00:02:53 +0000",
   "errs": 4,
   "warnings": 12,
   "hints": 0,

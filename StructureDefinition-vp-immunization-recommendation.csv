@@ -50,7 +50,7 @@ imr-1:One of vaccineCode or targetDisease SHALL be present {vaccineCode.exists()
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ImmunizationRecommendation.recommendation.extension:fulfillingImmunization","ImmunizationRecommendation.recommendation.extension","fulfillingImmunization","","",0,1,"","","","Extension {[CanonicalType[http://example.org/StructureDefinition/vp-fulfilling-immunization]]} {[]}
+"ImmunizationRecommendation.recommendation.extension:fulfillingImmunization","ImmunizationRecommendation.recommendation.extension","fulfillingImmunization","","",0,1,"","","","Extension {[CanonicalType[https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization]]} {[]}
 ","FulfillingImmunization","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

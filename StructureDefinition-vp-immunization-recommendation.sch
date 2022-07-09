@@ -84,7 +84,7 @@
   <sch:pattern>
     <sch:title>f:ImmunizationRecommendation/f:recommendation</sch:title>
     <sch:rule context="f:ImmunizationRecommendation/f:recommendation">
-      <sch:assert test="count(f:extension[@url = 'http://example.org/StructureDefinition/vp-fulfilling-immunization']) &lt;= 1">extension with URL = 'http://example.org/StructureDefinition/vp-fulfilling-immunization': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization']) &lt;= 1">extension with URL = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:vaccineCode) &gt;= 1">vaccineCode: minimum cardinality of 'vaccineCode' is 1</sch:assert>
       <sch:assert test="count(f:vaccineCode) &lt;= 1">vaccineCode: maximum cardinality of 'vaccineCode' is 1</sch:assert>
       <sch:assert test="count(f:targetDisease) &gt;= 1">targetDisease: minimum cardinality of 'targetDisease' is 1</sch:assert>

@@ -1,17 +1,17 @@
 {
-  "package": "com.github.fhirvaccinationpass.ig",
+  "package": "vp-implementation-guide",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://example.org/StructureDefinition/vp-fulfilling-immunization",
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization",
       "title": "FulfillingImmunization",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "http://example.org/StructureDefinition/vp-population-recommendation-extension",
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension",
       "title": "PopulationRecommendationExtension",
       "types": [
         "Age",
@@ -72,30 +72,24 @@
   "profiles": {
     "Immunization": [
       {
-        "url": "http://example.org/StructureDefinition/vp-immunization",
+        "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization",
         "title": "Immunization"
       }
     ],
     "ImmunizationRecommendation": [
       {
-        "url": "http://example.org/StructureDefinition/vp-immunization-recommendation",
+        "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation",
         "title": "ImmunizationRecommendation"
       }
     ],
     "Basic": [
       {
-        "url": "http://example.org/StructureDefinition/vp-population-recommendation",
+        "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation",
         "title": "PopulationRecommendation"
       }
     ]
   },
   "usage": {
-    "http://example.org/StructureDefinition/vp-fulfilling-immunization": [
-      "ImmunizationRecommendation.recommendation"
-    ],
-    "http://example.org/StructureDefinition/vp-population-recommendation-extension": [
-      "Basic"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -125,6 +119,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization": [
+      "ImmunizationRecommendation.recommendation"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension": [
+      "Basic"
     ]
   }
 }
