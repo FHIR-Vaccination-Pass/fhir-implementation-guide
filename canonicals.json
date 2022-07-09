@@ -1,8 +1,8 @@
 [
   {
-    "id": "vp-implementation-guide",
+    "id": "com.github.fhirvaccinationpass.ig",
     "type": "ImplementationGuide",
-    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig",
     "version": "0.1.0",
     "name": "VPImplementationGuide"
   },

@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide> a fhir:ImplementationGuide;
+<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "vp-implementation-guide"];
+  fhir:Resource.id [ fhir:value "com.github.fhirvaccinationpass.ig"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VPImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VPImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide"];
+  fhir:ImplementationGuide.url [ fhir:value "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "VPImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-09T00:02:53+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-09T21:18:08+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "http://example.org/example-publisher" ]
      ]
   ];
-  fhir:ImplementationGuide.packageId [ fhir:value "vp-implementation-guide"];
+  fhir:ImplementationGuide.packageId [ fhir:value "com.github.fhirvaccinationpass.ig"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -453,7 +453,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide.ttl> a owl:Ontology;
+<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

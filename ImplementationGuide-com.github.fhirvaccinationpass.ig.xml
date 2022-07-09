@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="vp-implementation-guide"/>
+  <id value="com.github.fhirvaccinationpass.ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VPImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>VPImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig</pre></div>
   </text>
-  <url value="https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide"/>
+  <url value="https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig"/>
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-07-09T00:02:53+00:00"/>
+  <date value="2022-07-09T21:18:08+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -18,7 +18,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <packageId value="vp-implementation-guide"/>
+  <packageId value="com.github.fhirvaccinationpass.ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">

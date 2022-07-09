@@ -3,6 +3,6 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "date": "20220709000218",
-  "name": "vp-implementation-guide"
+  "date": "20220709211731",
+  "name": "com.github.fhirvaccinationpass.ig"
 }

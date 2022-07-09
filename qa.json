@@ -1,9 +1,9 @@
 {
-  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide",
+  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig",
   "name": "VPImplementationGuide",
-  "package-id": "vp-implementation-guide",
+  "package-id": "com.github.fhirvaccinationpass.ig",
   "ig-ver": "0.1.0",
-  "date": "Sat, 09 Jul, 2022 00:02:53 +0000",
+  "date": "Sat, 09 Jul, 2022 21:18:08 +0000",
   "errs": 4,
   "warnings": 12,
   "hints": 0,

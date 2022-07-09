@@ -1,15 +1,15 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "vp-implementation-guide",
+  "id": "com.github.fhirvaccinationpass.ig",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VPImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>VPImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig</pre></div>"
   },
-  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/vp-implementation-guide",
+  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig",
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-07-09T00:02:53+00:00",
+  "date": "2022-07-09T21:18:08+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "packageId": "vp-implementation-guide",
+  "packageId": "com.github.fhirvaccinationpass.ig",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
