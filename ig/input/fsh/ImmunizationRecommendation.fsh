@@ -3,13 +3,13 @@ Parent: ImmunizationRecommendation
 Id: vp-immunization-recommendation
 Title: "ImmunizationRecommendation"
 Description: "ImmunizationRecommendation profile for use in FHIR Vaccination Pass"
-* recommendation.vaccineCode 1..1
+* recommendation.vaccineCode 1..1 MS
 * recommendation.vaccineCode only CodeableConcept
 * recommendation.vaccineCode from http://fhir.de/CodeSystem/ifa/pzn
-* recommendation.targetDisease 1..1
+* recommendation.targetDisease 1..1 MS
 * recommendation.targetDisease from http://hl7.org/fhir/sid/icd-10
-* recommendation.dateCriterion 1..1
-* recommendation.extension contains VPFulfillingImmunization named fulfillingImmunization 0..1
+* recommendation.dateCriterion 1..1 MS
+* recommendation.extension contains VPFulfillingImmunization named fulfillingImmunization 0..1 MS
 
 Extension: VPFulfillingImmunization
 Id: vp-fulfilling-immunization
