@@ -11,7 +11,7 @@ val sushi by tasks.register<Exec>("sushi") {
 
 val updatePublisher by tasks.register<Exec>("updatePublisher") {
     if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-        commandLine("./_updatePublisher.bat", "/f")
+        commandLine("cmd", "/c", "_updatePublisher.bat", "/f")
     } else {
         commandLine("./_updatePublisher.sh", "-y")
     }
@@ -21,7 +21,7 @@ val updatePublisher by tasks.register<Exec>("updatePublisher") {
 
 val ig by tasks.register<Exec>("ig") {
     if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-        commandLine("./_genonce.bat")
+        commandLine("cmd", "/c", "_genonce.bat")
     } else {
         commandLine("./_genonce.sh")
     }
