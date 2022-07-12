@@ -1,7 +1,10 @@
 .DS_Store
 Thumbs.db
 /fsh-generated
-/input-cache
+/input-cache/**/*
 /output
 /temp
 /template
+
+# Fixing IG Publisher version to 1.1.122 to work around https://github.com/HL7/fhir-ig-publisher/issues/464
+!/input-cache/publisher.jar
