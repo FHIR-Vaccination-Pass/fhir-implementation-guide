@@ -1,9 +1,13 @@
-name: GitHub Pages
+name: CI
 
 on:
   push:
     branches:
       - main
+
+  pull_request:
+    branches:
+      - '*'
 
 jobs:
   deploy:
@@ -32,7 +36,7 @@ jobs:
 
       - run: npm install -g fsh-sushi
 
-      - run: ./gradlew ig
+      - run: ./gradlew test
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
