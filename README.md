@@ -8,6 +8,7 @@ for deployment in the `userlib/` directory of the IBM FHIR Server.
 
 ### Prerequisites
 
+- [Git LFS](https://git-lfs.github.com)
 - [JDK](https://adoptium.net) >= 11
 - [Node.js](https://nodejs.org/en/) >= 16
 - [Ruby](https://www.ruby-lang.org/) >= 3.1
