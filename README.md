@@ -8,6 +8,7 @@ for deployment in the `userlib/` directory of the IBM FHIR Server.
 
 ### Prerequisites
 
+- [Git LFS](https://git-lfs.github.com)
 - [JDK](https://adoptium.net) >= 11
 - [Node.js](https://nodejs.org/en/) >= 16
 - [Ruby](https://www.ruby-lang.org/) >= 3.1
@@ -40,8 +41,9 @@ Metadata and the navigation structure of the implementation guide can be edited 
 
 ### Gradle Task Reference
 
-| Task                | Description                                                                                                                                                               |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :ig:sushi           | Runs SUSHI on the `./ig` directory                                                                                                                                        |
-| :ig:ig              | Runs IG Publisher on the `./ig` directory, this includes a run of SUSHI                                                                                                   |
-| :ibm-fhir-jar:build | Runs `:ig:ig` if necessary, extracts the FHIR package in `./ibm-fhir-jar/build/resources/main/` and packages the Java project to a `.jar` in `./ibm-fhir-jar/build/libs/` |
+| Task                | Description                                                                                                                                                                                                      |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :ig:sushi           | Runs SUSHI on the `./ig` directory                                                                                                                                                                               |
+| :ig:ig              | Runs IG Publisher on the `./ig` directory, this includes a run of SUSHI                                                                                                                                          |
+| :ibm-fhir-jar:test  | Runs `:ig:ig` if necessary, extracts the FHIR package in `./ibm-fhir-jar/build/resources/main/` and runs conformance tests that check the validation behaviour of the FHIR resources with the IBM FHIR Validator |
+| :ibm-fhir-jar:build | Runs `:ig:ig` if necessary, extracts the FHIR package in `./ibm-fhir-jar/build/resources/main/` and packages the Java project to a `.jar` in `./ibm-fhir-jar/build/libs/`                                        |
