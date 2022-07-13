@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "VPImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-10T16:04:34+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-13T20:52:23+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -317,6 +317,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-active-vaccination-scheme" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ActiveVaccinationScheme" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ActiveVaccinationScheme indicates which vaccination scheme is in use for a patient and target disease." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/vp-immunization" ]
        ];
@@ -324,7 +338,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Immunization profile for use in FHIR Vaccination Pass" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -338,7 +352,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ImmunizationRecommendation profile for use in FHIR Vaccination Pass" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication profile for use in FHIR Vaccination Pass" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient profile for use in FHIR Vaccination Pass" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -351,7 +393,90 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PopulationRecommendation" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner profile for use in FHIR Vaccination Pass" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-target-disease" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TargetDisease" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Target disease contains information about a disease that can be vaccinated against" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vacation-plan>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vacation-plan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VacationPlan" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "VacationPlan models the intent of a patient to travel to a different location, potentially leading to a change of the\nindicated immunizations for the patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-dose" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationDose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "VaccinationDose models one of the doses of a vaccination given as part of a vaccination scheme." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-scheme" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationScheme" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "VaccinationScheme models a process consisting of immunizations through wich a patient can reach immunity against a target\ndisease." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-active-vaccination-scheme-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ActiveVaccinationSchemeExtension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -364,7 +489,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FulfillingImmunization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -375,6 +500,84 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/vp-population-recommendation-extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PopulationRecommendationExtension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-target-disease-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TargetDiseaseExtension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vacation-plan-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vacation-plan-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VacationPlanExtension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-dose-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationDoseExtension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-repeating-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-dose-repeating-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationDoseRepeatingExtension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-single-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-dose-single-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationDoseSingleExtension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-scheme-extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationSchemeExtension" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

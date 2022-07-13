@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-07-10T16:04:34+00:00",
+  "date": "2022-07-13T20:52:23+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -333,6 +333,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/vp-active-vaccination-scheme"
+        },
+        "name": "ActiveVaccinationScheme",
+        "description": "ActiveVaccinationScheme indicates which vaccination scheme is in use for a patient and target disease.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/vp-immunization"
         },
         "name": "Immunization",
@@ -361,9 +375,120 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/vp-medication"
+        },
+        "name": "Medication",
+        "description": "Medication profile for use in FHIR Vaccination Pass",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-patient"
+        },
+        "name": "Patient",
+        "description": "Patient profile for use in FHIR Vaccination Pass",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/vp-population-recommendation"
         },
         "name": "PopulationRecommendation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-practitioner"
+        },
+        "name": "Practitioner",
+        "description": "Practitioner profile for use in FHIR Vaccination Pass",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-target-disease"
+        },
+        "name": "TargetDisease",
+        "description": "Target disease contains information about a disease that can be vaccinated against",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vacation-plan"
+        },
+        "name": "VacationPlan",
+        "description": "VacationPlan models the intent of a patient to travel to a different location, potentially leading to a change of the\nindicated immunizations for the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vaccination-dose"
+        },
+        "name": "VaccinationDose",
+        "description": "VaccinationDose models one of the doses of a vaccination given as part of a vaccination scheme.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vaccination-scheme"
+        },
+        "name": "VaccinationScheme",
+        "description": "VaccinationScheme models a process consisting of immunizations through wich a patient can reach immunity against a target\ndisease.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-active-vaccination-scheme-extension"
+        },
+        "name": "ActiveVaccinationSchemeExtension",
         "exampleBoolean": false
       },
       {
@@ -390,6 +515,84 @@
           "reference": "StructureDefinition/vp-population-recommendation-extension"
         },
         "name": "PopulationRecommendationExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-target-disease-extension"
+        },
+        "name": "TargetDiseaseExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vacation-plan-extension"
+        },
+        "name": "VacationPlanExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vaccination-dose-extension"
+        },
+        "name": "VaccinationDoseExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vaccination-dose-repeating-extension"
+        },
+        "name": "VaccinationDoseRepeatingExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vaccination-dose-single-extension"
+        },
+        "name": "VaccinationDoseSingleExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-vaccination-scheme-extension"
+        },
+        "name": "VaccinationSchemeExtension",
         "exampleBoolean": false
       }
     ],

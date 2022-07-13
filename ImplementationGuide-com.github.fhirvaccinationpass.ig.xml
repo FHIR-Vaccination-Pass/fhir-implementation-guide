@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-07-10T16:04:34+00:00"/>
+  <date value="2022-07-13T20:52:23+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -208,6 +208,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/vp-active-vaccination-scheme"/>
+      </reference>
+      <name value="ActiveVaccinationScheme"/>
+      <description value="ActiveVaccinationScheme indicates which vaccination scheme is in use for a patient and target disease."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/vp-immunization"/>
       </reference>
       <name value="Immunization"/>
@@ -230,9 +241,96 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/vp-medication"/>
+      </reference>
+      <name value="Medication"/>
+      <description value="Medication profile for use in FHIR Vaccination Pass"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-patient"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="Patient profile for use in FHIR Vaccination Pass"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/vp-population-recommendation"/>
       </reference>
       <name value="PopulationRecommendation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-practitioner"/>
+      </reference>
+      <name value="Practitioner"/>
+      <description value="Practitioner profile for use in FHIR Vaccination Pass"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-target-disease"/>
+      </reference>
+      <name value="TargetDisease"/>
+      <description value="Target disease contains information about a disease that can be vaccinated against"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vacation-plan"/>
+      </reference>
+      <name value="VacationPlan"/>
+      <description value="VacationPlan models the intent of a patient to travel to a different location, potentially leading to a change of the&#xA;indicated immunizations for the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vaccination-dose"/>
+      </reference>
+      <name value="VaccinationDose"/>
+      <description value="VaccinationDose models one of the doses of a vaccination given as part of a vaccination scheme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vaccination-scheme"/>
+      </reference>
+      <name value="VaccinationScheme"/>
+      <description value="VaccinationScheme models a process consisting of immunizations through wich a patient can reach immunity against a target&#xA;disease."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-active-vaccination-scheme-extension"/>
+      </reference>
+      <name value="ActiveVaccinationSchemeExtension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -253,6 +351,66 @@
         <reference value="StructureDefinition/vp-population-recommendation-extension"/>
       </reference>
       <name value="PopulationRecommendationExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-target-disease-extension"/>
+      </reference>
+      <name value="TargetDiseaseExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vacation-plan-extension"/>
+      </reference>
+      <name value="VacationPlanExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vaccination-dose-extension"/>
+      </reference>
+      <name value="VaccinationDoseExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vaccination-dose-repeating-extension"/>
+      </reference>
+      <name value="VaccinationDoseRepeatingExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vaccination-dose-single-extension"/>
+      </reference>
+      <name value="VaccinationDoseSingleExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-vaccination-scheme-extension"/>
+      </reference>
+      <name value="VaccinationSchemeExtension"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

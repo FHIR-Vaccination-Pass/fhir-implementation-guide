@@ -7,6 +7,20 @@
     "name": "VPImplementationGuide"
   },
   {
+    "id": "vp-active-vaccination-scheme",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme",
+    "version": "0.1.0",
+    "name": "VPActiveVaccinationScheme"
+  },
+  {
+    "id": "vp-active-vaccination-scheme-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme-extension",
+    "version": "0.1.0",
+    "name": "VPActiveVaccinationSchemeExtension"
+  },
+  {
     "id": "vp-fulfilling-immunization",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization",
@@ -28,6 +42,20 @@
     "name": "VPImmunizationRecommendation"
   },
   {
+    "id": "vp-medication",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication",
+    "version": "0.1.0",
+    "name": "VPMedication"
+  },
+  {
+    "id": "vp-patient",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient",
+    "version": "0.1.0",
+    "name": "VPPatient"
+  },
+  {
     "id": "vp-population-recommendation",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation",
@@ -40,5 +68,82 @@
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension",
     "version": "0.1.0",
     "name": "VPPopulationRecommendationExtension"
+  },
+  {
+    "id": "vp-practitioner",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-practitioner",
+    "version": "0.1.0",
+    "name": "VPPractitioner"
+  },
+  {
+    "id": "vp-target-disease",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease",
+    "version": "0.1.0",
+    "name": "VPTargetDisease"
+  },
+  {
+    "id": "vp-target-disease-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease-extension",
+    "version": "0.1.0",
+    "name": "VPTargetDiseaseExtension"
+  },
+  {
+    "id": "vp-vacation-plan",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vacation-plan",
+    "version": "0.1.0",
+    "name": "VPVacationPlan"
+  },
+  {
+    "id": "vp-vacation-plan-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vacation-plan-extension",
+    "version": "0.1.0",
+    "name": "VPVacationPlanExtension"
+  },
+  {
+    "id": "vp-vaccination-dose",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose",
+    "version": "0.1.0",
+    "name": "VPVaccinationDose"
+  },
+  {
+    "id": "vp-vaccination-dose-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension",
+    "version": "0.1.0",
+    "name": "VPVaccinationDoseExtension"
+  },
+  {
+    "id": "vp-vaccination-dose-repeating-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-repeating-extension",
+    "version": "0.1.0",
+    "name": "VPVaccinationDoseRepeatingExtension"
+  },
+  {
+    "id": "vp-vaccination-dose-single-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-single-extension",
+    "version": "0.1.0",
+    "name": "VPVaccinationDoseSingleExtension"
+  },
+  {
+    "id": "vp-vaccination-scheme",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme",
+    "version": "0.1.0",
+    "name": "VPVaccinationScheme"
+  },
+  {
+    "id": "vp-vaccination-scheme-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension",
+    "version": "0.1.0",
+    "name": "VPVaccinationSchemeExtension"
   }
 ]
