@@ -6,5 +6,5 @@ Thumbs.db
 /temp
 /template
 
-# Fixing IG Publisher version to 1.1.122 to work around https://github.com/HL7/fhir-ig-publisher/issues/464
+# Fixing IG Publisher version to have repeatable build behaviour
 !/input-cache/publisher.jar
