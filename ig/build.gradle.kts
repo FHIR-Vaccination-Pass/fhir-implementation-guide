@@ -1,7 +1,11 @@
 import org.apache.tools.ant.taskdefs.condition.Os
 
 val sushi by tasks.register<Exec>("sushi") {
-    commandLine("sushi", "-s", ".")
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        commandLine("cmd", "/c", "sushi", "-s", ".")
+    } else {
+        commandLine("sushi", "-s", ".")
+    }
 
     group = "build"
     inputs.dir("./input")
