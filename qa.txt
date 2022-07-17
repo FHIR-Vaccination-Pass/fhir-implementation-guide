@@ -3,8 +3,8 @@
 
 err = 4, warn = 36, info = 0
 IG Publisher Version: 1.1.125
-Generated Sun Jul 17 16:31:49 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
- Build Errors : 0 / 11 / 0
+Generated Sun Jul 17 19:04:24 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
+ Build Errors : 2 / 11 / 0
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme-extension : 0 / 1 / 1
@@ -40,6 +40,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-vaccination-dose-repeating-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-vaccination-dose-single-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-vaccination-scheme-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/output/StructureDefinition-vp-population-recommendation-extension.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 565, column 165: The link '??' for "AllUCUMExpressionForTime (missing link)" cannot be resolved
+ERROR: /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/output/StructureDefinition-vp-population-recommendation-extension.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 567, column 163: The link '??' for "AllUCUMExpressionForTime (missing link)" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig.json ==
 == fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme'): The Implementation Guide contains no examples for this profile
