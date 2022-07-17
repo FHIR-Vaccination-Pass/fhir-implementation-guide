@@ -1,15 +1,12 @@
 package com.github.fhirvaccinationpass.ibmfhirig;
 
 import com.ibm.fhir.model.resource.Basic;
-import com.ibm.fhir.model.resource.ImmunizationRecommendation;
 import com.ibm.fhir.model.type.*;
 import com.ibm.fhir.validation.FHIRValidator;
 import com.ibm.fhir.validation.exception.FHIRValidationException;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.lang.String;
-import java.time.LocalDate;
 
 import static com.ibm.fhir.validation.util.FHIRValidationUtil.countErrors;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -55,6 +52,29 @@ class PopulationRecommendationTest {
                                                 .value(Decimal.of(42))
                                                 .unit("yr")
                                                 .build())
+                                        .build(),
+                                Extension.builder()
+                                        .url("https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-location-extension")
+                                        .extension(
+                                                Extension.builder()
+                                                        .url("country")
+                                                        .value(CodeableConcept.builder()
+                                                                .coding(Coding.builder()
+                                                                        .system(Uri.of("urn:iso:std:iso:3166"))
+                                                                        .code(Code.of("DE"))
+                                                                        .build())
+                                                                .build())
+                                                        .build(),
+                                                Extension.builder()
+                                                        .url("subdivision")
+                                                        .value(CodeableConcept.builder()
+                                                                .coding(Coding.builder()
+                                                                        .system(Uri.of("urn:iso:std:iso:3166:-2"))
+                                                                        .code(Code.of("DE-BY"))
+                                                                        .build())
+                                                                .build())
+                                                        .build()
+                                        )
                                         .build()
                         )
                         .build())
