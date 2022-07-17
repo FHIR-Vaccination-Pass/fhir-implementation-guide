@@ -15,7 +15,7 @@ Description: ""
 * obeys vp-vaccination-dose-extension-only-one-kind-invariant
 
 Invariant: vp-vaccination-dose-extension-only-one-kind-invariant
-Description: ""
+Description: "A vaccination dose can either be a single dose or a repeating dose."
 Expression: "extension('singleDose').exists() != extension('repeatingDose').exists()"
 Severity: #error
 
