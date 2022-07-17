@@ -1,9 +1,9 @@
 ﻿VPImplementationGuide : Validation Results
 =========================================
 
-err = 7, warn = 34, info = 0
+err = 4, warn = 34, info = 0
 IG Publisher Version: 1.1.125
-Generated Fri Jul 15 14:53:29 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
+Generated Sun Jul 17 13:47:06 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
  Build Errors : 0 / 10 / 0
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme : 0 / 1 / 1
@@ -20,8 +20,8 @@ Generated Fri Jul 15 14:53:29 UTC 2022. FHIR version 4.0.1 for com.github.fhirva
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-target-disease-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vacation-plan : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vacation-plan-extension : 0 / 1 / 1
- /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-dose : 1 / 1 / 1
- /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-dose-extension : 2 / 1 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-dose : 0 / 1 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-dose-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-dose-repeating-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-dose-single-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-scheme : 0 / 1 / 1
@@ -76,11 +76,8 @@ WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.i
 == fsh-generated/resources/StructureDefinition-vp-vacation-plan-extension.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vacation-plan-extension'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-vp-vaccination-dose.json ==
-ERROR: StructureDefinition/vp-vaccination-dose: StructureDefinition.snapshot.element[8].constraint[2]: ElementDefinition.constraint.human: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vp-vaccination-dose-extension.json ==
-ERROR: StructureDefinition/vp-vaccination-dose-extension: StructureDefinition.snapshot.element[0].constraint[2]: ElementDefinition.constraint.human: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-ERROR: StructureDefinition/vp-vaccination-dose-extension: StructureDefinition.differential.element[0].constraint[0]: ElementDefinition.constraint.human: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-vp-vaccination-dose-repeating-extension.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-repeating-extension'): The Implementation Guide contains no examples for this extension

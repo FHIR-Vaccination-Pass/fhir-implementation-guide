@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "VPVaccinationDose"];
   fhir:StructureDefinition.title [ fhir:value "VaccinationDose"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-15T14:52:55+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-17T13:46:32+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Example Publisher"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -492,6 +492,7 @@
          fhir:index 2;
          fhir:ElementDefinition.constraint.key [ fhir:value "vp-vaccination-dose-extension-only-one-kind-invariant" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "A vaccination dose can either be a single dose or a repeating dose." ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "extension('singleDose').exists() != extension('repeatingDose').exists()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension";

@@ -20,7 +20,7 @@
   "name": "VPVaccinationDose",
   "title": "VaccinationDose",
   "status": "active",
-  "date": "2022-07-15T14:52:55+00:00",
+  "date": "2022-07-17T13:46:32+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -442,6 +442,7 @@
           {
             "key": "vp-vaccination-dose-extension-only-one-kind-invariant",
             "severity": "error",
+            "human": "A vaccination dose can either be a single dose or a repeating dose.",
             "expression": "extension('singleDose').exists() != extension('repeatingDose').exists()",
             "source": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension"
           }
