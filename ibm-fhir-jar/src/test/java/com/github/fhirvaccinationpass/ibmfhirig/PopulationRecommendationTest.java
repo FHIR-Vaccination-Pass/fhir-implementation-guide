@@ -19,7 +19,6 @@ class PopulationRecommendationTest {
     static final String PROFILE_URL = "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation";
 
     @Test
-    @Disabled("Fails with [[expression: value.as(Age).exists(), result: false, location: Basic.extension[0].extension[0]]]")
     void validatesWhenResourceIsCompliant() throws FHIRValidationException {
         var populationRecommendation = Basic.builder()
                 .meta(Meta.builder()
