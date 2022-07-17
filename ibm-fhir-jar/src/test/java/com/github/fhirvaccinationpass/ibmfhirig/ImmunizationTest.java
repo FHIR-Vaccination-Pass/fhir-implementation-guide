@@ -15,7 +15,8 @@ import static org.assertj.core.api.Assertions.*;
 
 class ImmunizationTest {
 
-    static final String PROFILE_URL = "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization";
+    static final String BASE_URL = "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/";
+    static final String PROFILE_URL = BASE_URL + "vp-immunization";
 
     @Test
     void validatesWhenResourceIsCompliant() throws FHIRValidationException {
@@ -23,20 +24,33 @@ class ImmunizationTest {
                 .meta(Meta.builder()
                         .profile(Canonical.of(PROFILE_URL))
                         .build())
-                .patient(Reference.builder()
-                        .reference("https://example.com/Patient/123")
-                        .build())
                 .status(ImmunizationStatus.COMPLETED)
-                .occurrence(DateTime.of(LocalDate.of(2022, 7, 10)))
                 .vaccineCode(CodeableConcept.builder()
                         .coding(Coding.builder()
+                                .system(Uri.builder()
+                                        .value("http://fhir.de/CodeSystem/ifa/pzn")
+                                        .build())
                                 .code(Code.builder()
                                         .value("vaccine-abc")
                                         .build())
                                 .build())
                         .build())
-
-                .lotNumber("ABC123")
+                .patient(Reference.builder()
+                        .reference("https://example.com/Patient/123")
+                        .build())
+                .occurrence(DateTime.of(LocalDate.of(2022, 7, 10)))
+                .lotNumber("lotNumber-abc")
+                .performer(Immunization.Performer.builder()
+                        .actor(Reference.builder()
+                                .reference("https://example.com/Practitioner/456")
+                                .build())
+                        .build())
+                .extension(Extension.builder()
+                        .url(BASE_URL + "vp-administered-vaccination-dose")
+                        .value(Reference.builder()
+                                .reference("https://example.com/Basic/789")
+                                .build())
+                        .build())
                 .build();
 
         var issues = FHIRValidator.validator().validate(immunization);
