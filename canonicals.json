@@ -21,6 +21,13 @@
     "name": "VPActiveVaccinationSchemeExtension"
   },
   {
+    "id": "vp-administered-vaccination-dose",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-administered-vaccination-dose",
+    "version": "0.1.0",
+    "name": "VPAdministeredVaccinationDose"
+  },
+  {
     "id": "vp-fulfilling-immunization",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization",

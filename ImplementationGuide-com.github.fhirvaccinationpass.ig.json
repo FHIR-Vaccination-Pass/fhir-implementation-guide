@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-07-17T16:09:40+00:00",
+  "date": "2022-07-17T16:31:22+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -489,6 +489,19 @@
           "reference": "StructureDefinition/vp-active-vaccination-scheme-extension"
         },
         "name": "ActiveVaccinationSchemeExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-administered-vaccination-dose"
+        },
+        "name": "VPAdministeredVaccinationDose",
         "exampleBoolean": false
       },
       {

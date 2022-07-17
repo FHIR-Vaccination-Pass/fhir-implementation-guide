@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-07-17T16:09:40+00:00"/>
+  <date value="2022-07-17T16:31:22+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -331,6 +331,16 @@
         <reference value="StructureDefinition/vp-active-vaccination-scheme-extension"/>
       </reference>
       <name value="ActiveVaccinationSchemeExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-administered-vaccination-dose"/>
+      </reference>
+      <name value="VPAdministeredVaccinationDose"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

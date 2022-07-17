@@ -60,6 +60,13 @@
       ]
     },
     {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-administered-vaccination-dose",
+      "title": "VPAdministeredVaccinationDose",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization",
       "title": "FulfillingImmunization",
       "types": [
@@ -527,6 +534,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -550,6 +560,9 @@
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme-extension": [
       "Basic"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-administered-vaccination-dose": [
+      "Immunization"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization": [
       "ImmunizationRecommendation.recommendation"
