@@ -1,10 +1,7 @@
 .DS_Store
 Thumbs.db
 /fsh-generated
-/input-cache/**/*
+/input-cache
 /output
 /temp
 /template
-
-# Fixing IG Publisher version to have repeatable build behaviour
-!/input-cache/publisher.jar
