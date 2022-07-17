@@ -3,7 +3,7 @@
 
 err = 4, warn = 34, info = 0
 IG Publisher Version: 1.1.125
-Generated Sun Jul 17 13:47:06 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
+Generated Sun Jul 17 16:10:06 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
  Build Errors : 0 / 10 / 0
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme : 0 / 1 / 1
