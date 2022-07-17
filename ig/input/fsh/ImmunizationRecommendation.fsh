@@ -3,22 +3,33 @@ Parent: ImmunizationRecommendation
 Id: vp-immunization-recommendation
 Title: "ImmunizationRecommendation"
 Description: "ImmunizationRecommendation profile for use in FHIR Vaccination Pass."
-* id 1..1 MS
+* id 0..1 MS
 * patient 1..1 MS
 * patient only Reference(VPPatient)
 * date 1..1 MS
 * recommendation 1..1 MS
   * vaccineCode 1..1 MS
   * vaccineCode from http://fhir.de/CodeSystem/ifa/pzn
+    * coding 1.. MS
+      * system 1..1 MS
+      * code 1..1 MS
   * targetDisease 1..1 MS
   * targetDisease from http://hl7.org/fhir/sid/icd-10
+    * coding 1.. MS
+      * system 1..1 MS
+      * code 1..1 MS
   * forecastStatus 1..1 MS
   * forecastStatus from http://hl7.org/fhir/ValueSet/immunization-recommendation-status
-  * dateCriterion 1..2 MS
+    * coding 1.. MS
+      * system 1..1 MS
+      * code 1..1 MS
+  * dateCriterion 1.. MS
     * code 1..1 MS
     * code from http://hl7.org/fhir/ValueSet/immunization-recommendation-date-criterion
+      * coding 1.. MS
+        * system 1..1 MS
+        * code 1..1 MS
     * value 1..1 MS
-    * value only dateTime
   * supportingImmunization 0.. MS
   * supportingImmunization only Reference(VPImmunization)
 * extension contains VPImmunizationRecommendationIsDeactivated named isDeactivated 1..1 MS
