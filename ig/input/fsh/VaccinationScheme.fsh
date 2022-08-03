@@ -36,13 +36,21 @@ Description: ""
   * value[x] 1..1 MS
   * value[x] only Quantity
   * value[x] obeys age-1
-  * value[x].code from http://hl7.org/fhir/ValueSet/age-units
+  * value[x]
+    * code 1..1 MS
+    * code from http://hl7.org/fhir/ValueSet/age-units
+    * system 1..1 MS
+    * value 1..1 MS
 
 * extension[ageEnd]
   * value[x] 1..1 MS
   * value[x] only Quantity
   * value[x] obeys age-1
-  * value[x].code from http://hl7.org/fhir/ValueSet/age-units
+  * value[x]
+    * code 1..1 MS
+    * code from http://hl7.org/fhir/ValueSet/age-units
+    * system 1..1 MS
+    * value 1..1 MS
 
 
 CodeSystem: VPVaccinationSchemeType
