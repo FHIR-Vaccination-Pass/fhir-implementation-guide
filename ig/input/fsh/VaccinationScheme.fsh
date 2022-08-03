@@ -6,6 +6,7 @@ Description: """
   VaccinationScheme models a process consisting of immunizations through wich a patient can reach immunity against a target
   disease.
 """
+* code 1..1 MS
 * extension contains VPVaccinationSchemeExtension named vaccinationSchemeExtension 1..1 MS
 
 Extension: VPVaccinationSchemeExtension
