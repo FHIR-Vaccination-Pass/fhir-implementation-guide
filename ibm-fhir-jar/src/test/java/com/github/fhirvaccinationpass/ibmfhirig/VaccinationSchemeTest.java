@@ -64,6 +64,12 @@ class VaccinationSchemeTest {
                                                 .value(Decimal.of(42))
                                                 .unit("yr")
                                                 .build())
+                                        .build(),
+                                Extension.builder()
+                                        .url("vaccine")
+                                        .value(Reference.builder()
+                                                .reference("https://example.com/Medication/123")
+                                                .build())
                                         .build()
                         )
                         .build())
