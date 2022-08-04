@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "VPVacationPlanExtension"];
   fhir:StructureDefinition.title [ fhir:value "VacationPlanExtension"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-04T13:09:21+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-04T16:22:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Example Publisher"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

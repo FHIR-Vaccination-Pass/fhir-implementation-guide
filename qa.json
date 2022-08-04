@@ -3,9 +3,9 @@
   "name": "VPImplementationGuide",
   "package-id": "com.github.fhirvaccinationpass.ig",
   "ig-ver": "0.1.0",
-  "date": "Thu, 04 Aug, 2022 13:09:21 +0000",
-  "errs": 4,
-  "warnings": 38,
+  "date": "Thu, 04 Aug, 2022 16:22:49 +0000",
+  "errs": 0,
+  "warnings": 39,
   "hints": 1,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot2 (3)"

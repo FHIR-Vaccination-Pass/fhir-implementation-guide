@@ -182,6 +182,13 @@
     "name": "VPVaccinationSchemeExtension"
   },
   {
+    "id": "vp-icd-10-value-set",
+    "type": "ValueSet",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-icd-10-value-set",
+    "version": "0.1.0",
+    "name": "VPICD10ValueSet"
+  },
+  {
     "id": "vp-vaccination-scheme-type-value-set",
     "type": "ValueSet",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-vaccination-scheme-type-value-set",

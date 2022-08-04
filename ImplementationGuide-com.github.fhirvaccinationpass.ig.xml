@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-08-04T13:09:21+00:00"/>
+  <date value="2022-08-04T16:22:49+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -455,6 +455,16 @@
         <reference value="StructureDefinition/vp-vaccination-scheme-extension"/>
       </reference>
       <name value="VaccinationSchemeExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vp-icd-10-value-set"/>
+      </reference>
+      <name value="ICD10ValueSet"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

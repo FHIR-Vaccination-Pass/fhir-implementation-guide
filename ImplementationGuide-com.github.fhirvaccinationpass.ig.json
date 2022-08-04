@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-08-04T13:09:21+00:00",
+  "date": "2022-08-04T16:22:49+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -649,6 +649,19 @@
           "reference": "StructureDefinition/vp-vaccination-scheme-extension"
         },
         "name": "VaccinationSchemeExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vp-icd-10-value-set"
+        },
+        "name": "ICD10ValueSet",
         "exampleBoolean": false
       },
       {
