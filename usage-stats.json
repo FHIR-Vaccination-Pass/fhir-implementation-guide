@@ -74,6 +74,13 @@
       ]
     },
     {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation-is-deactivated",
+      "title": "VPImmunizationRecommendationIsDeactivated",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension",
       "title": "PopulationRecommendationExtension",
       "types": [
@@ -143,6 +150,20 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-recommended-vaccination-dose",
+      "title": "VPRecommendedVaccinationDose",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-supporting-population-recommendation",
+      "title": "SupportingPopulationRecommendation",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -579,10 +600,19 @@
       "Immunization"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization": [
-      "ImmunizationRecommendation.recommendation"
+      "ImmunizationRecommendation"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation-is-deactivated": [
+      "ImmunizationRecommendation"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension": [
       "Basic"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-recommended-vaccination-dose": [
+      "ImmunizationRecommendation"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-supporting-population-recommendation": [
+      "ImmunizationRecommendation"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease-extension": [
       "Basic"

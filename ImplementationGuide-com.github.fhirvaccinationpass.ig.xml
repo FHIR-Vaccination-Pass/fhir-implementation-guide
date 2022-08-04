@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-07-17T19:03:56+00:00"/>
+  <date value="2022-08-04T11:06:48+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -233,7 +233,7 @@
         <reference value="StructureDefinition/vp-immunization-recommendation"/>
       </reference>
       <name value="ImmunizationRecommendation"/>
-      <description value="ImmunizationRecommendation profile for use in FHIR Vaccination Pass"/>
+      <description value="ImmunizationRecommendation profile for use in FHIR Vaccination Pass."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -351,6 +351,18 @@
         <reference value="StructureDefinition/vp-fulfilling-immunization"/>
       </reference>
       <name value="FulfillingImmunization"/>
+      <description value="Future Immunization that fulfills this ImmunizationRecommendation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-immunization-recommendation-is-deactivated"/>
+      </reference>
+      <name value="VPImmunizationRecommendationIsDeactivated"/>
+      <description value="Indicates if this ImmunizationRecommendation has been deactivated by a medical doctor."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -361,6 +373,28 @@
         <reference value="StructureDefinition/vp-population-recommendation-extension"/>
       </reference>
       <name value="PopulationRecommendationExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-recommended-vaccination-dose"/>
+      </reference>
+      <name value="VPRecommendedVaccinationDose"/>
+      <description value="VaccinationDose that has to be administered to fulfill this ImmunizationRecommendation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-supporting-population-recommendation"/>
+      </reference>
+      <name value="SupportingPopulationRecommendation"/>
+      <description value="PopulationRecommendation that is the reason for generating this ImmunizationRecommendation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

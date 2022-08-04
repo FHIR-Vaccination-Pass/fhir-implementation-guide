@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-07-17T19:03:56+00:00",
+  "date": "2022-08-04T11:06:48+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -364,7 +364,7 @@
           "reference": "StructureDefinition/vp-immunization-recommendation"
         },
         "name": "ImmunizationRecommendation",
-        "description": "ImmunizationRecommendation profile for use in FHIR Vaccination Pass",
+        "description": "ImmunizationRecommendation profile for use in FHIR Vaccination Pass.",
         "exampleBoolean": false
       },
       {
@@ -515,6 +515,21 @@
           "reference": "StructureDefinition/vp-fulfilling-immunization"
         },
         "name": "FulfillingImmunization",
+        "description": "Future Immunization that fulfills this ImmunizationRecommendation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-immunization-recommendation-is-deactivated"
+        },
+        "name": "VPImmunizationRecommendationIsDeactivated",
+        "description": "Indicates if this ImmunizationRecommendation has been deactivated by a medical doctor.",
         "exampleBoolean": false
       },
       {
@@ -528,6 +543,34 @@
           "reference": "StructureDefinition/vp-population-recommendation-extension"
         },
         "name": "PopulationRecommendationExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-recommended-vaccination-dose"
+        },
+        "name": "VPRecommendedVaccinationDose",
+        "description": "VaccinationDose that has to be administered to fulfill this ImmunizationRecommendation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-supporting-population-recommendation"
+        },
+        "name": "SupportingPopulationRecommendation",
+        "description": "PopulationRecommendation that is the reason for generating this ImmunizationRecommendation.",
         "exampleBoolean": false
       },
       {

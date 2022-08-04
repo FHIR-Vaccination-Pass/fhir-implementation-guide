@@ -49,6 +49,13 @@
     "name": "VPImmunizationRecommendation"
   },
   {
+    "id": "vp-immunization-recommendation-is-deactivated",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation-is-deactivated",
+    "version": "0.1.0",
+    "name": "VPImmunizationRecommendationIsDeactivated"
+  },
+  {
     "id": "vp-medication",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication",
@@ -82,6 +89,20 @@
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-practitioner",
     "version": "0.1.0",
     "name": "VPPractitioner"
+  },
+  {
+    "id": "vp-recommended-vaccination-dose",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-recommended-vaccination-dose",
+    "version": "0.1.0",
+    "name": "VPRecommendedVaccinationDose"
+  },
+  {
+    "id": "vp-supporting-population-recommendation",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-supporting-population-recommendation",
+    "version": "0.1.0",
+    "name": "VPSupportingPopulationRecommendation"
   },
   {
     "id": "vp-target-disease",
