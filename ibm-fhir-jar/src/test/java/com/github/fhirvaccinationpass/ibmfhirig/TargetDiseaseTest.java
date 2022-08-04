@@ -46,7 +46,7 @@ class TargetDiseaseTest {
                                         .build(),
                                 Extension.builder()
                                         .url("description")
-                                        .value("This is bad for you.")
+                                        .value(Markdown.of("This is bad for you."))
                                         .build()
                         )
                         .build())
