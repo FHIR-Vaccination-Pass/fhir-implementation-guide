@@ -14,7 +14,7 @@ Description: "ImmunizationRecommendation profile for use in FHIR Vaccination Pas
       * system 1..1 MS
       * code 1..1 MS
   * targetDisease 1..1 MS
-  * targetDisease from http://hl7.org/fhir/sid/icd-10
+  * targetDisease from VPICD10ValueSet
     * coding 1.. MS
       * system 1..1 MS
       * code 1..1 MS
