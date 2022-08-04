@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-08-04T22:36:48+00:00"/>
+  <date value="2022-08-04T22:42:55+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -407,6 +407,26 @@
       </reference>
       <name value="MedicationTradeName"/>
       <description value="The trade name of the medication."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-patient-is-pregnant-extension"/>
+      </reference>
+      <name value="VPPatientIsPregnantExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-patient-keycloak-username-extension"/>
+      </reference>
+      <name value="VPPatientKeycloakUsernameExtension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

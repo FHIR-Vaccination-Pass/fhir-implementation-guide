@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-08-04T22:36:48+00:00",
+  "date": "2022-08-04T22:42:55+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -586,6 +586,32 @@
         },
         "name": "MedicationTradeName",
         "description": "The trade name of the medication.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-patient-is-pregnant-extension"
+        },
+        "name": "VPPatientIsPregnantExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-patient-keycloak-username-extension"
+        },
+        "name": "VPPatientKeycloakUsernameExtension",
         "exampleBoolean": false
       },
       {

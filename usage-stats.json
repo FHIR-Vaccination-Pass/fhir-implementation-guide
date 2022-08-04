@@ -124,6 +124,20 @@
       ]
     },
     {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-is-pregnant-extension",
+      "title": "VPPatientIsPregnantExtension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-keycloak-username-extension",
+      "title": "VPPatientKeycloakUsernameExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension",
       "title": "PopulationRecommendationExtension",
       "types": [
@@ -741,6 +755,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -769,7 +786,8 @@
       "Immunization"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-country-code-extension": [
-      "Extension"
+      "Extension",
+      "Patient.address.country"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization": [
       "ImmunizationRecommendation"
@@ -783,6 +801,12 @@
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-trade-name": [
       "Medication"
     ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-is-pregnant-extension": [
+      "Patient"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-keycloak-username-extension": [
+      "Patient"
+    ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension": [
       "Basic"
     ],
@@ -793,7 +817,8 @@
       "ImmunizationRecommendation"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-state-code-extension": [
-      "Extension"
+      "Extension",
+      "Patient.address.state"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-supporting-population-recommendation": [
       "ImmunizationRecommendation"

@@ -1,10 +1,10 @@
 ﻿VPImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 50, info = 1
+err = 0, warn = 54, info = 1
 IG Publisher Version: 1.1.128
-Generated Thu Aug 04 22:37:32 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
- Build Errors : 0 / 14 / 0
+Generated Thu Aug 04 22:43:42 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
+ Build Errors : 0 / 16 / 0
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/CodeSystem-vp-vaccination-scheme-type : 0 / 0 / 2
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme : 0 / 1 / 1
@@ -20,6 +20,8 @@ Generated Thu Aug 04 22:37:32 UTC 2022. FHIR version 4.0.1 for com.github.fhirva
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-medication-trade-name : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-organization : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-patient : 0 / 1 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-patient-is-pregnant-extension : 0 / 1 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-patient-keycloak-username-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-population-recommendation : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-population-recommendation-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-population-recommendation-location-extension : 0 / 1 / 1
@@ -45,6 +47,8 @@ Generated Thu Aug 04 22:37:32 UTC 2022. FHIR version 4.0.1 for com.github.fhirva
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-active-vaccination-scheme-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-administered-vaccination-dose.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-country-code-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-patient-is-pregnant-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-patient-keycloak-username-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-population-recommendation-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-population-recommendation-location-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-state-code-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -91,6 +95,10 @@ WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.i
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vp-patient.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-vp-patient-is-pregnant-extension.json ==
+WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-is-pregnant-extension'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-vp-patient-keycloak-username-extension.json ==
+WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-keycloak-username-extension'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-vp-population-recommendation.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vp-population-recommendation-extension.json ==

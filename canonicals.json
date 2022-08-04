@@ -105,6 +105,20 @@
     "name": "VPPatient"
   },
   {
+    "id": "vp-patient-is-pregnant-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-is-pregnant-extension",
+    "version": "0.1.0",
+    "name": "VPPatientIsPregnantExtension"
+  },
+  {
+    "id": "vp-patient-keycloak-username-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient-keycloak-username-extension",
+    "version": "0.1.0",
+    "name": "VPPatientKeycloakUsernameExtension"
+  },
+  {
     "id": "vp-population-recommendation",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation",
