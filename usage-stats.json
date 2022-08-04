@@ -99,6 +99,31 @@
       ]
     },
     {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-target-disease",
+      "title": "VPMedicationTargetDisease",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-trade-name",
+      "title": "MedicationTradeName",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension",
       "title": "PopulationRecommendationExtension",
       "types": [
@@ -596,6 +621,12 @@
         "title": "Medication"
       }
     ],
+    "Organization": [
+      {
+        "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-organization",
+        "title": "Organization"
+      }
+    ],
     "Patient": [
       {
         "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient",
@@ -660,6 +691,12 @@
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation-is-deactivated": [
       "ImmunizationRecommendation"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-target-disease": [
+      "Medication"
+    ],
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-trade-name": [
+      "Medication"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension": [
       "Basic"

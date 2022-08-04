@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-08-04T21:39:40+00:00",
+  "date": "2022-08-04T22:05:52+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -389,6 +389,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/vp-organization"
+        },
+        "name": "Organization",
+        "description": "Organization profile for use in FHIR Vaccination Pass",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/vp-patient"
         },
         "name": "Patient",
@@ -543,6 +557,34 @@
         },
         "name": "VPImmunizationRecommendationIsDeactivated",
         "description": "Indicates if this ImmunizationRecommendation has been deactivated by a medical doctor.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-medication-target-disease"
+        },
+        "name": "VPMedicationTargetDisease",
+        "description": "The ICD-10 code of a disease that is targeted by this medication.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-medication-trade-name"
+        },
+        "name": "MedicationTradeName",
+        "description": "The trade name of the medication.",
         "exampleBoolean": false
       },
       {

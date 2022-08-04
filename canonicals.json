@@ -77,6 +77,27 @@
     "name": "VPMedication"
   },
   {
+    "id": "vp-medication-target-disease",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-target-disease",
+    "version": "0.1.0",
+    "name": "VPMedicationTargetDisease"
+  },
+  {
+    "id": "vp-medication-trade-name",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-trade-name",
+    "version": "0.1.0",
+    "name": "VPMedicationTradeName"
+  },
+  {
+    "id": "vp-organization",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-organization",
+    "version": "0.1.0",
+    "name": "VPOrganization"
+  },
+  {
     "id": "vp-patient",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-patient",

@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-08-04T21:39:40+00:00"/>
+  <date value="2022-08-04T22:05:52+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -252,6 +252,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/vp-organization"/>
+      </reference>
+      <name value="Organization"/>
+      <description value="Organization profile for use in FHIR Vaccination Pass"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/vp-patient"/>
       </reference>
       <name value="Patient"/>
@@ -373,6 +384,28 @@
       </reference>
       <name value="VPImmunizationRecommendationIsDeactivated"/>
       <description value="Indicates if this ImmunizationRecommendation has been deactivated by a medical doctor."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-medication-target-disease"/>
+      </reference>
+      <name value="VPMedicationTargetDisease"/>
+      <description value="The ICD-10 code of a disease that is targeted by this medication."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-medication-trade-name"/>
+      </reference>
+      <name value="MedicationTradeName"/>
+      <description value="The trade name of the medication."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
