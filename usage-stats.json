@@ -67,6 +67,24 @@
       ]
     },
     {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-country-code-extension",
+      "title": "VPCountryCodeExtension",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization",
       "title": "FulfillingImmunization",
       "types": [
@@ -157,6 +175,24 @@
       "title": "VPRecommendedVaccinationDose",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-state-code-extension",
+      "title": "VPStateCodeExtension",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     },
     {

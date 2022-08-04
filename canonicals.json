@@ -35,6 +35,13 @@
     "name": "VPAdministeredVaccinationDose"
   },
   {
+    "id": "vp-country-code-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-country-code-extension",
+    "version": "0.1.0",
+    "name": "VPCountryCodeExtension"
+  },
+  {
     "id": "vp-fulfilling-immunization",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization",
@@ -103,6 +110,13 @@
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-recommended-vaccination-dose",
     "version": "0.1.0",
     "name": "VPRecommendedVaccinationDose"
+  },
+  {
+    "id": "vp-state-code-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-state-code-extension",
+    "version": "0.1.0",
+    "name": "VPStateCodeExtension"
   },
   {
     "id": "vp-supporting-population-recommendation",
@@ -187,6 +201,13 @@
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-icd-10-value-set",
     "version": "0.1.0",
     "name": "VPICD10ValueSet"
+  },
+  {
+    "id": "vp-state-code-value-set",
+    "type": "ValueSet",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-state-code-value-set",
+    "version": "0.1.0",
+    "name": "VPStateCodeValueSet"
   },
   {
     "id": "vp-vaccination-scheme-type-value-set",

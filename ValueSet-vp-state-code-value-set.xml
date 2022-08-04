@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vp-state-code-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-iso3166-2.html"><code>urn:iso:std:iso:3166:-2</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-state-code-value-set"/>
+  <version value="0.1.0"/>
+  <name value="VPStateCodeValueSet"/>
+  <title value="VPStateCodeValueSet"/>
+  <status value="active"/>
+  <date value="2022-08-04T21:23:28+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="urn:iso:std:iso:3166:-2"/>
+    </include>
+  </compose>
+</ValueSet>

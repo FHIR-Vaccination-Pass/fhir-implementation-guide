@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vp-state-code-value-set",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-iso3166-2.html\"><code>urn:iso:std:iso:3166:-2</code></a></li></ul></div>"
+  },
+  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-state-code-value-set",
+  "version": "0.1.0",
+  "name": "VPStateCodeValueSet",
+  "title": "VPStateCodeValueSet",
+  "status": "active",
+  "date": "2022-08-04T21:23:28+00:00",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:3166:-2"
+      }
+    ]
+  }
+}
