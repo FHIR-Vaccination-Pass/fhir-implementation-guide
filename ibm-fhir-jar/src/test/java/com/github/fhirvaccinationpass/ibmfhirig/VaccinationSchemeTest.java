@@ -1,22 +1,19 @@
 package com.github.fhirvaccinationpass.ibmfhirig;
 
 import com.ibm.fhir.model.resource.Basic;
-import com.ibm.fhir.model.resource.ImmunizationRecommendation;
 import com.ibm.fhir.model.type.*;
 import com.ibm.fhir.validation.FHIRValidator;
 import com.ibm.fhir.validation.exception.FHIRValidationException;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.lang.String;
-import java.time.LocalDate;
 
 import static com.ibm.fhir.validation.util.FHIRValidationUtil.countErrors;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class PopulationRecommendationTest {
+class VaccinationSchemeTest {
 
-    static final String PROFILE_URL = "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation";
+    static final String PROFILE_URL = "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme";
 
     @Test
     void validatesWhenResourceIsCompliant() throws FHIRValidationException {
@@ -27,13 +24,25 @@ class PopulationRecommendationTest {
                 .code(CodeableConcept.builder()
                         .coding(Coding.builder()
                                 .code(Code.builder()
-                                        .value("PopulationRecommendation")
+                                        .value("VaccinationScheme")
                                         .build())
                                 .build())
                         .build())
                 .extension(Extension.builder()
-                        .url("https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension")
+                        .url("https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension")
                         .extension(
+                                Extension.builder()
+                                        .url("name")
+                                        .value("MyFirstVaccinationScheme")
+                                        .build(),
+                                Extension.builder()
+                                        .url("type")
+                                        .value("standard")
+                                        .build(),
+                                Extension.builder()
+                                        .url("isPreferred")
+                                        .value(true)
+                                        .build(),
                                 Extension.builder()
                                         .url("ageStart")
                                         .value(Age.builder()
@@ -54,6 +63,12 @@ class PopulationRecommendationTest {
                                                 .system(Uri.of("http://unitsofmeasure.org"))
                                                 .value(Decimal.of(42))
                                                 .unit("yr")
+                                                .build())
+                                        .build(),
+                                Extension.builder()
+                                        .url("vaccine")
+                                        .value(Reference.builder()
+                                                .reference("https://example.com/Medication/123")
                                                 .build())
                                         .build()
                         )
