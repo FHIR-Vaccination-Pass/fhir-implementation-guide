@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-08-04T22:26:29+00:00"/>
+  <date value="2022-08-04T22:36:48+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -277,6 +277,7 @@
         <reference value="StructureDefinition/vp-population-recommendation"/>
       </reference>
       <name value="PopulationRecommendation"/>
+      <description value="PopulationRecommendation models a general recommendation to achieve immunity against a specific disease, possibly&#xA;limited to locations where the disease is prevalent or to an age range of the patients."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -416,6 +417,16 @@
         <reference value="StructureDefinition/vp-population-recommendation-extension"/>
       </reference>
       <name value="PopulationRecommendationExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-population-recommendation-location-extension"/>
+      </reference>
+      <name value="PopulationRecommendationLocationExtension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

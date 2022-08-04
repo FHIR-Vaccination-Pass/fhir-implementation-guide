@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-08-04T22:26:29+00:00",
+  "date": "2022-08-04T22:36:48+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -420,6 +420,7 @@
           "reference": "StructureDefinition/vp-population-recommendation"
         },
         "name": "PopulationRecommendation",
+        "description": "PopulationRecommendation models a general recommendation to achieve immunity against a specific disease, possibly\nlimited to locations where the disease is prevalent or to an age range of the patients.",
         "exampleBoolean": false
       },
       {
@@ -598,6 +599,19 @@
           "reference": "StructureDefinition/vp-population-recommendation-extension"
         },
         "name": "PopulationRecommendationExtension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-population-recommendation-location-extension"
+        },
+        "name": "PopulationRecommendationLocationExtension",
         "exampleBoolean": false
       },
       {

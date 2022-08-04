@@ -119,6 +119,13 @@
     "name": "VPPopulationRecommendationExtension"
   },
   {
+    "id": "vp-population-recommendation-location-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-location-extension",
+    "version": "0.1.0",
+    "name": "VPPopulationRecommendationLocationExtension"
+  },
+  {
     "id": "vp-practitioner",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-practitioner",
