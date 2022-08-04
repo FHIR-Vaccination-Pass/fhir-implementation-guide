@@ -17,7 +17,7 @@ Description: ""
 * extension[code]
   * value[x] 1..1 MS
   * value[x] only CodeableConcept
-  * value[x] from http://hl7.org/fhir/sid/icd-10
+  * value[x] from VPICD10ValueSet
   * value[x]
     * coding 1.. MS
       * system 1..1 MS
