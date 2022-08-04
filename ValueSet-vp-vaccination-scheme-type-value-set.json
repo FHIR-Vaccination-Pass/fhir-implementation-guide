@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vp-vaccination-scheme-type-value-set",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-vp-vaccination-scheme-type.html\"><code>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type</code></a></li></ul></div>"
+  },
+  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-vaccination-scheme-type-value-set",
+  "version": "0.1.0",
+  "name": "VPVaccinationSchemeTypeValueSet",
+  "title": "VaccinationSchemeTypeValueSet",
+  "status": "active",
+  "date": "2022-08-04T13:09:21+00:00",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "description": "Describes the type of a vaccination scheme such as standard, quick or repeating",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type"
+      }
+    ]
+  }
+}

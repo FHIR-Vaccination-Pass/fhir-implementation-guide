@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-vaccination-scheme-type-value-set> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vp-vaccination-scheme-type-value-set"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-vp-vaccination-scheme-type.html\"><code>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-vaccination-scheme-type-value-set"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "VPVaccinationSchemeTypeValueSet"];
+  fhir:ValueSet.title [ fhir:value "VaccinationSchemeTypeValueSet"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-08-04T13:09:21+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Example Publisher"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Example Publisher" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://example.org/example-publisher" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Describes the type of a vaccination scheme such as standard, quick or repeating"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-vaccination-scheme-type-value-set.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

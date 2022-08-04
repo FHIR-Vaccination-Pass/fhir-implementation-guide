@@ -1,0 +1,43 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "vp-vaccination-scheme-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">standard<a name=\"vp-vaccination-scheme-type-standard\"> </a></td><td>Standard scheme that should be followed in most cases</td></tr><tr><td style=\"white-space:nowrap\">fast<a name=\"vp-vaccination-scheme-type-fast\"> </a></td><td>Fast scheme that can be used if an accelerated immunization process is desired</td></tr><tr><td style=\"white-space:nowrap\">booster<a name=\"vp-vaccination-scheme-type-booster\"> </a></td><td>Scheme that includes only repeating immunizations to refresh the protection</td></tr></table></div>"
+  },
+  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type",
+  "version": "0.1.0",
+  "name": "VPVaccinationSchemeType",
+  "title": "VaccinationSchemeType",
+  "status": "active",
+  "date": "2022-08-04T13:09:21+00:00",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "description": "Describes the type of a vaccination scheme such as standard, quick or repeating",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "standard",
+      "display": "Standard scheme that should be followed in most cases"
+    },
+    {
+      "code": "fast",
+      "display": "Fast scheme that can be used if an accelerated immunization process is desired"
+    },
+    {
+      "code": "booster",
+      "display": "Scheme that includes only repeating immunizations to refresh the protection"
+    }
+  ]
+}

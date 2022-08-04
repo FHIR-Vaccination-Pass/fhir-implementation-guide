@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vp-vaccination-scheme-type"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">standard<a name=\"vp-vaccination-scheme-type-standard\"> </a></td><td>Standard scheme that should be followed in most cases</td></tr><tr><td style=\"white-space:nowrap\">fast<a name=\"vp-vaccination-scheme-type-fast\"> </a></td><td>Fast scheme that can be used if an accelerated immunization process is desired</td></tr><tr><td style=\"white-space:nowrap\">booster<a name=\"vp-vaccination-scheme-type-booster\"> </a></td><td>Scheme that includes only repeating immunizations to refresh the protection</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "VPVaccinationSchemeType"];
+  fhir:CodeSystem.title [ fhir:value "VaccinationSchemeType"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-08-04T13:09:21+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Example Publisher"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Example Publisher" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://example.org/example-publisher" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Describes the type of a vaccination scheme such as standard, quick or repeating"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "standard" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Standard scheme that should be followed in most cases" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "fast" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fast scheme that can be used if an accelerated immunization process is desired" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "booster" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Scheme that includes only repeating immunizations to refresh the protection" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

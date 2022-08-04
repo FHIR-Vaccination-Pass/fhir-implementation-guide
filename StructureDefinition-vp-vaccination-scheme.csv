@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Basic.extension:vaccinationSchemeExtension","Basic.extension","vaccinationSchemeExtension","","",1,1,"","","","Extension {[CanonicalType[https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension]]} {[]}
+"Basic.extension:vaccinationSchemeExtension","Basic.extension","vaccinationSchemeExtension","","",1,1,"Y","","","Extension {[CanonicalType[https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension]]} {[]}
 ","VaccinationSchemeExtension","An Extension","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -37,7 +37,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Basic.identifier","Basic.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Business identifier","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./identifier","FiveWs.identifier"
-"Basic.code","Basic.code","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
+"Basic.code","Basic.code","","","",1,1,"Y","Y","Y","CodeableConcept {[]} {[]}
 ","Kind of Resource","Identifies the 'type' of resource - equivalent to the resource name for other resources.","Because resource references will only be able to indicate 'Basic', the type of reference will need to be specified in a Profile identified as part of the resource.  Refer to the resource notes section for information on appropriate terminologies for this code.
 
 This element is labeled as a modifier because it defines the meaning of the resource and cannot be ignored.","Must be able to distinguish different types of Basic resources.","","","","","","","",,"example","Codes for identifying types of resources not yet defined by FHIR.","http://hl7.org/fhir/ValueSet/basic-resource-type","",,,,"Basic.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

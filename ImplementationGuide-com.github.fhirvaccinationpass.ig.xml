@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-08-04T11:06:48+00:00"/>
+  <date value="2022-08-04T13:09:21+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -455,6 +455,28 @@
         <reference value="StructureDefinition/vp-vaccination-scheme-extension"/>
       </reference>
       <name value="VaccinationSchemeExtension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vp-vaccination-scheme-type-value-set"/>
+      </reference>
+      <name value="VaccinationSchemeTypeValueSet"/>
+      <description value="Describes the type of a vaccination scheme such as standard, quick or repeating"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/vp-vaccination-scheme-type"/>
+      </reference>
+      <name value="VaccinationSchemeType"/>
+      <description value="Describes the type of a vaccination scheme such as standard, quick or repeating"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

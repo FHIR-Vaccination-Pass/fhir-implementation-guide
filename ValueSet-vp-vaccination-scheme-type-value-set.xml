@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vp-vaccination-scheme-type-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-vp-vaccination-scheme-type.html"><code>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-vaccination-scheme-type-value-set"/>
+  <version value="0.1.0"/>
+  <name value="VPVaccinationSchemeTypeValueSet"/>
+  <title value="VaccinationSchemeTypeValueSet"/>
+  <status value="active"/>
+  <date value="2022-08-04T13:09:21+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Describes the type of a vaccination scheme such as standard, quick or repeating"/>
+  <compose>
+    <include>
+      <system value="https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type"/>
+    </include>
+  </compose>
+</ValueSet>

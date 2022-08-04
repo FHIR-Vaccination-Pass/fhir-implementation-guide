@@ -1,10 +1,11 @@
 ﻿VPImplementationGuide : Validation Results
 =========================================
 
-err = 4, warn = 38, info = 0
+err = 4, warn = 38, info = 1
 IG Publisher Version: 1.1.128
-Generated Thu Aug 04 11:07:17 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
+Generated Thu Aug 04 13:09:50 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
  Build Errors : 2 / 10 / 0
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/CodeSystem-vp-vaccination-scheme-type : 0 / 0 / 2
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme-extension : 0 / 1 / 1
@@ -30,6 +31,7 @@ Generated Thu Aug 04 11:07:17 UTC 2022. FHIR version 4.0.1 for com.github.fhirva
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-dose-single-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-scheme : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-vaccination-scheme-extension : 0 / 1 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ValueSet-vp-vaccination-scheme-type-value-set : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-population-recommendation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -44,6 +46,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/vp-vaccination-scheme-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/output/StructureDefinition-vp-population-recommendation-extension.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 565, column 165: The link '??' for "AllUCUMExpressionForTime (missing link)" cannot be resolved
 ERROR: /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/output/StructureDefinition-vp-population-recommendation-extension.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 567, column 163: The link '??' for "AllUCUMExpressionForTime (missing link)" cannot be resolved
+== fsh-generated/resources/CodeSystem-vp-vaccination-scheme-type.json ==
+INFORMATION: CodeSystem/vp-vaccination-scheme-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig.json ==
 == fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme'): The Implementation Guide contains no examples for this profile
@@ -101,3 +105,4 @@ WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.i
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vp-vaccination-scheme-extension.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-vp-vaccination-scheme-type-value-set.json ==

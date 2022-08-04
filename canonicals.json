@@ -1,5 +1,12 @@
 [
   {
+    "id": "vp-vaccination-scheme-type",
+    "type": "CodeSystem",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/CodeSystem/vp-vaccination-scheme-type",
+    "version": "0.1.0",
+    "name": "VPVaccinationSchemeType"
+  },
+  {
     "id": "com.github.fhirvaccinationpass.ig",
     "type": "ImplementationGuide",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ImplementationGuide/com.github.fhirvaccinationpass.ig",
@@ -173,5 +180,12 @@
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension",
     "version": "0.1.0",
     "name": "VPVaccinationSchemeExtension"
+  },
+  {
+    "id": "vp-vaccination-scheme-type-value-set",
+    "type": "ValueSet",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/ValueSet/vp-vaccination-scheme-type-value-set",
+    "version": "0.1.0",
+    "name": "VPVaccinationSchemeTypeValueSet"
   }
 ]
