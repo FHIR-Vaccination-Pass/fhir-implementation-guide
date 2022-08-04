@@ -203,6 +203,22 @@
  <tr><td>Practitioner</td><td>PRD (as one example)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>PRD-7 (or XCN.1)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>XCN Components</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name (officialName)</td><td>XCN Components</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>XPN.7, but often indicated by which field contains the name</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>implied by XPN.11</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>XPN.1/FN.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>XPN.2 + XPN.3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>XPN.5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suffix</td><td>XPN/4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>XPN.13 + XPN.14</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name (@default)</td><td>XCN Components</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>XPN.7, but often indicated by which field contains the name</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>implied by XPN.11</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>XPN.1/FN.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>XPN.2 + XPN.3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>XPN.5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suffix</td><td>XPN/4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>XPN.13 + XPN.14</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>PRT-15, STF-10, ROL-12</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>ORC-24, STF-11, ROL-11, PRT-14</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>STF-5</td> </tr>
@@ -220,6 +236,26 @@
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>./id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>./statusCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>./name</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name (officialName)</td><td>./name</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>unique(./use)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./formatted</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>./part[partType = FAM]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>./part[partType = GIV]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>./part[partType = PFX]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suffix</td><td>./part[partType = SFX]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name (@default)</td><td>./name</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>unique(./use)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./formatted</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>./part[partType = FAM]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>./part[partType = GIV]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>./part[partType = PFX]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;suffix</td><td>./part[partType = SFX]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>./telecom</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>./addr</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>./administrativeGender</td> </tr>
@@ -240,6 +276,18 @@
  <tr><td>Practitioner</td><td>Provider</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>./Identifiers</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>./PreferredName (GivenNames, FamilyName, TitleCode)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name (officialName)</td><td>./PreferredName (GivenNames, FamilyName, TitleCode)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>./NamePurpose</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>./FamilyName</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>./GivenNames</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>./TitleCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name (@default)</td><td>./PreferredName (GivenNames, FamilyName, TitleCode)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>./NamePurpose</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family</td><td>./FamilyName</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given</td><td>./GivenNames</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>./TitleCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;telecom</td><td>./ContactPoints</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;address</td><td>./Addresses</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;gender</td><td>./GenderCode</td> </tr>
@@ -309,7 +357,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package com.github.fhirvaccinationpass.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 4, 2022 21:23+0000">2022-08-04</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package com.github.fhirvaccinationpass.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 4, 2022 21:39+0000">2022-08-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
