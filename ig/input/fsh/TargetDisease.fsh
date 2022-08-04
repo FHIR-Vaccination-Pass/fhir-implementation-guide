@@ -29,4 +29,4 @@ Description: ""
 
 * extension[description]
   * value[x] 1..1 MS
-  * value[x] only string
+  * value[x] only markdown
