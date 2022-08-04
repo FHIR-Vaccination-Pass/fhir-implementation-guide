@@ -3,6 +3,7 @@ Parent: Basic
 Id: vp-target-disease
 Title: "TargetDisease"
 Description: "Target disease contains information about a disease that can be vaccinated against"
+* code 1..1 MS
 * extension contains VPTargetDiseaseExtension named targetDiseaseExtension 1..1 MS
 
 Extension: VPTargetDiseaseExtension
