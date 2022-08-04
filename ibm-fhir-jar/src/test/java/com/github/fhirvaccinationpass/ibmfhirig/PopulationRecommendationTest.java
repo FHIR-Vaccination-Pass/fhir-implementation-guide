@@ -13,7 +13,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class PopulationRecommendationTest {
 
-    static final String PROFILE_URL = "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation";
+    static final String BASE_URL = "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/";
+    static final String PROFILE_URL = BASE_URL + "vp-population-recommendation";
 
     @Test
     void validatesWhenResourceIsCompliant() throws FHIRValidationException {
@@ -29,8 +30,21 @@ class PopulationRecommendationTest {
                                 .build())
                         .build())
                 .extension(Extension.builder()
-                        .url("https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension")
+                        .url(BASE_URL + "vp-population-recommendation-extension")
                         .extension(
+                                Extension.builder()
+                                        .url("targetDisease")
+                                        .value(CodeableConcept.builder()
+                                                .coding(Coding.builder()
+                                                        .system(Uri.builder()
+                                                                .value("http://hl7.org/fhir/sid/icd-10")
+                                                                .build())
+                                                        .code(Code.builder()
+                                                                .value("disease-abc")
+                                                                .build())
+                                                        .build())
+                                                .build())
+                                        .build(),
                                 Extension.builder()
                                         .url("ageStart")
                                         .value(Age.builder()
@@ -54,10 +68,10 @@ class PopulationRecommendationTest {
                                                 .build())
                                         .build(),
                                 Extension.builder()
-                                        .url("https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-location-extension")
+                                        .url(BASE_URL + "vp-population-recommendation-location-extension")
                                         .extension(
                                                 Extension.builder()
-                                                        .url("country")
+                                                        .url(BASE_URL + "vp-country-code-extension")
                                                         .value(CodeableConcept.builder()
                                                                 .coding(Coding.builder()
                                                                         .system(Uri.of("urn:iso:std:iso:3166"))
@@ -66,7 +80,7 @@ class PopulationRecommendationTest {
                                                                 .build())
                                                         .build(),
                                                 Extension.builder()
-                                                        .url("subdivision")
+                                                        .url(BASE_URL + "vp-state-code-extension")
                                                         .value(CodeableConcept.builder()
                                                                 .coding(Coding.builder()
                                                                         .system(Uri.of("urn:iso:std:iso:3166:-2"))
