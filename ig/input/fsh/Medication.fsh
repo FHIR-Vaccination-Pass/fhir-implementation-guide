@@ -17,6 +17,7 @@ Description: "Medication profile for use in FHIR Vaccination Pass"
     * system 1..1 MS
     * code 1..1 MS
 * extension contains VPMedicationTradeName named tradeName 1..1 MS
+* extension contains VPMedicationTargetDisease named targetDiseases 1.. MS
 
 Extension: VPMedicationTradeName
 Id: vp-medication-trade-name
@@ -24,3 +25,14 @@ Title: "MedicationTradeName"
 Description: "The trade name of the medication."
 * value[x] 1..1 MS
 * value[x] only string
+
+Extension: VPMedicationTargetDisease
+Id: vp-medication-target-disease
+Title: "VPMedicationTargetDisease"
+Description: "The ICD-10 code of a disease that is targeted by this medication."
+* value[x] 1..1 MS
+* value[x] only CodeableConcept
+* value[x] from VPICD10ValueSet
+  * coding 1.. MS
+    * system 1..1 MS
+    * code 1..1 MS
