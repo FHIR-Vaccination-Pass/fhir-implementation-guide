@@ -1,6 +1,14 @@
+Extension: VPLocationExtension
+Id: vp-location-extension
+Title: "LocationExtension"
+Description: ""
+* extension contains
+  VPCountryCodeExtension named country 1..1 MS and
+  VPStateCodeExtension named state 0..1 MS
+
 Extension: VPCountryCodeExtension
 Id: vp-country-code-extension
-Title: "VPCountryCodeExtension"
+Title: "CountryCodeExtension"
 Description: ""
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
@@ -11,7 +19,7 @@ Description: ""
 
 Extension: VPStateCodeExtension
 Id: vp-state-code-extension
-Title: "VPStateCodeExtension"
+Title: "StateCodeExtension"
 Description: ""
 * value[x] 1..1 MS
 * value[x] only CodeableConcept

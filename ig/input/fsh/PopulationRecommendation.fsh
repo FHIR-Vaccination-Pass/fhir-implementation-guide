@@ -18,7 +18,7 @@ Description: ""
   targetDisease 1..1 MS and
   ageStart 0..1 MS and
   ageEnd 0..1 MS
-* extension contains VPPopulationRecommendationLocationExtension named location 0..* MS
+* extension contains VPLocationExtension named location 0..* MS
 
 * extension[targetDisease]
   * value[x] 1..1 MS
@@ -47,12 +47,3 @@ Description: ""
     * code from http://hl7.org/fhir/ValueSet/age-units
     * system 1..1 MS
     * value 1..1 MS
-
-
-Extension: VPPopulationRecommendationLocationExtension
-Id: vp-population-recommendation-location-extension
-Title: "PopulationRecommendationLocationExtension"
-Description: ""
-* extension contains
-  VPCountryCodeExtension named country 1..1 MS and
-  VPStateCodeExtension named state 0..1 MS
