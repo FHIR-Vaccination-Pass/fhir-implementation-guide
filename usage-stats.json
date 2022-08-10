@@ -7,6 +7,9 @@
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme-extension",
       "title": "ActiveVaccinationSchemeExtension",
       "types": [
+        "Reference",
+        "Reference",
+        "markdown",
         "base64Binary",
         "boolean",
         "canonical",
