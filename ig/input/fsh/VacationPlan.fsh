@@ -13,7 +13,7 @@ Extension: VPVacationPlanExtension
 Id: vp-vacation-plan-extension
 Title: "VacationPlanExtension"
 Description: ""
-* extension contains VPLocationExtension named locations 1.. MS
+* extension contains VPLocationExtension named location 1.. MS
 * extension contains
     departureDate 1..1 MS and
     patient 1..1 MS
