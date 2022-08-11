@@ -6,7 +6,7 @@ Description: "Immunization profile for use in FHIR Vaccination Pass"
 * id 0..1 MS
 * status 1..1 MS
 * vaccineCode 1..1 MS
-* vaccineCode from http://fhir.de/CodeSystem/ifa/pzn
+* vaccineCode from http://fhir.de/ValueSet/ifa/pzn
   * coding 1.. MS
     * system 1..1 MS
     * code 1..1 MS
