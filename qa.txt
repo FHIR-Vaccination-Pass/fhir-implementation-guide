@@ -3,7 +3,7 @@
 
 err = 0, warn = 54, info = 1
 IG Publisher Version: 1.1.128
-Generated Thu Aug 11 13:02:52 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
+Generated Thu Aug 11 13:56:02 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
  Build Errors : 0 / 16 / 0
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/CodeSystem-vp-vaccination-scheme-type : 0 / 0 / 2
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
@@ -74,12 +74,12 @@ WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.i
 == fsh-generated/resources/StructureDefinition-vp-fulfilling-immunization.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-vp-immunization.json ==
-WARNING: StructureDefinition/vp-immunization: StructureDefinition.differential.element[5].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element Immunization.vaccineCode could not be resolved
-WARNING: StructureDefinition/vp-immunization: StructureDefinition.snapshot.element[13].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element Immunization.vaccineCode could not be resolved
+WARNING: StructureDefinition/vp-immunization: StructureDefinition.differential.element[5].binding: The valueSet reference http://fhir.de/ValueSet/ifa/pzn on element Immunization.vaccineCode could not be resolved
+WARNING: StructureDefinition/vp-immunization: StructureDefinition.snapshot.element[13].binding: The valueSet reference http://fhir.de/ValueSet/ifa/pzn on element Immunization.vaccineCode could not be resolved
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vp-immunization-recommendation.json ==
-WARNING: StructureDefinition/vp-immunization-recommendation: StructureDefinition.differential.element[10].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element ImmunizationRecommendation.recommendation.vaccineCode could not be resolved
-WARNING: StructureDefinition/vp-immunization-recommendation: StructureDefinition.snapshot.element[21].binding: The valueSet reference http://fhir.de/CodeSystem/ifa/pzn on element ImmunizationRecommendation.recommendation.vaccineCode could not be resolved
+WARNING: StructureDefinition/vp-immunization-recommendation: StructureDefinition.differential.element[10].binding: The valueSet reference http://fhir.de/ValueSet/ifa/pzn on element ImmunizationRecommendation.recommendation.vaccineCode could not be resolved
+WARNING: StructureDefinition/vp-immunization-recommendation: StructureDefinition.snapshot.element[21].binding: The valueSet reference http://fhir.de/ValueSet/ifa/pzn on element ImmunizationRecommendation.recommendation.vaccineCode could not be resolved
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vp-immunization-recommendation-is-deactivated.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation-is-deactivated'): The Implementation Guide contains no examples for this extension

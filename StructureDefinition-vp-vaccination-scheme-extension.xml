@@ -46,7 +46,7 @@ If system is present, it SHALL be UCUM. If value is present, it SHALL be positiv
   <name value="VPVaccinationSchemeExtension"/>
   <title value="VaccinationSchemeExtension"/>
   <status value="active"/>
-  <date value="2022-08-11T13:02:01+00:00"/>
+  <date value="2022-08-11T13:55:21+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
