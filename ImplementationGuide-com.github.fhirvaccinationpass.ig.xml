@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-08-10T21:41:07+00:00"/>
+  <date value="2022-08-11T05:51:10+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -362,7 +362,7 @@
       <reference>
         <reference value="StructureDefinition/vp-country-code-extension"/>
       </reference>
-      <name value="VPCountryCodeExtension"/>
+      <name value="CountryCodeExtension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -385,6 +385,16 @@
       </reference>
       <name value="VPImmunizationRecommendationIsDeactivated"/>
       <description value="Indicates if this ImmunizationRecommendation has been deactivated by a medical doctor."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vp-location-extension"/>
+      </reference>
+      <name value="LocationExtension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -444,16 +454,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/vp-population-recommendation-location-extension"/>
-      </reference>
-      <name value="PopulationRecommendationLocationExtension"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/vp-recommended-vaccination-dose"/>
       </reference>
       <name value="VPRecommendedVaccinationDose"/>
@@ -467,7 +467,7 @@
       <reference>
         <reference value="StructureDefinition/vp-state-code-extension"/>
       </reference>
-      <name value="VPStateCodeExtension"/>
+      <name value="StateCodeExtension"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

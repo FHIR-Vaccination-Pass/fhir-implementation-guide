@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-08-10T21:41:07+00:00",
+  "date": "2022-08-11T05:51:10+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -529,7 +529,7 @@
         "reference": {
           "reference": "StructureDefinition/vp-country-code-extension"
         },
-        "name": "VPCountryCodeExtension",
+        "name": "CountryCodeExtension",
         "exampleBoolean": false
       },
       {
@@ -558,6 +558,19 @@
         },
         "name": "VPImmunizationRecommendationIsDeactivated",
         "description": "Indicates if this ImmunizationRecommendation has been deactivated by a medical doctor.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vp-location-extension"
+        },
+        "name": "LocationExtension",
         "exampleBoolean": false
       },
       {
@@ -635,19 +648,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/vp-population-recommendation-location-extension"
-        },
-        "name": "PopulationRecommendationLocationExtension",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/vp-recommended-vaccination-dose"
         },
         "name": "VPRecommendedVaccinationDose",
@@ -664,7 +664,7 @@
         "reference": {
           "reference": "StructureDefinition/vp-state-code-extension"
         },
-        "name": "VPStateCodeExtension",
+        "name": "StateCodeExtension",
         "exampleBoolean": false
       },
       {

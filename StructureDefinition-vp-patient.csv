@@ -172,7 +172,7 @@ Territory","",1,1,"Y","","Y","string {[]} {[]}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.state.extension:code","Patient.address.state.extension","code","","",1,1,"Y","","","Extension {[CanonicalType[https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-state-code-extension]]} {[]}
-","VPStateCodeExtension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","StateCodeExtension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.state.value","Patient.address.state.value","","","",0,1,"","","","string {[]} {[]}
@@ -191,7 +191,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.country.extension:code","Patient.address.country.extension","code","","",1,1,"Y","","","Extension {[CanonicalType[https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-country-code-extension]]} {[]}
-","VPCountryCodeExtension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","CountryCodeExtension","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.country.value","Patient.address.country.value","","","",0,1,"","","","string {[]} {[]}

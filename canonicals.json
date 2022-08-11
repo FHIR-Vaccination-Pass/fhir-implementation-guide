@@ -70,6 +70,13 @@
     "name": "VPImmunizationRecommendationIsDeactivated"
   },
   {
+    "id": "vp-location-extension",
+    "type": "StructureDefinition",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-location-extension",
+    "version": "0.1.0",
+    "name": "VPLocationExtension"
+  },
+  {
     "id": "vp-medication",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication",
@@ -131,13 +138,6 @@
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-extension",
     "version": "0.1.0",
     "name": "VPPopulationRecommendationExtension"
-  },
-  {
-    "id": "vp-population-recommendation-location-extension",
-    "type": "StructureDefinition",
-    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-population-recommendation-location-extension",
-    "version": "0.1.0",
-    "name": "VPPopulationRecommendationLocationExtension"
   },
   {
     "id": "vp-practitioner",
