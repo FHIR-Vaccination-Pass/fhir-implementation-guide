@@ -68,7 +68,7 @@ class PopulationRecommendationTest {
                                                 .build())
                                         .build(),
                                 Extension.builder()
-                                        .url(BASE_URL + "vp-population-recommendation-location-extension")
+                                        .url(BASE_URL + "vp-location-extension")
                                         .extension(
                                                 Extension.builder()
                                                         .url(BASE_URL + "vp-country-code-extension")
