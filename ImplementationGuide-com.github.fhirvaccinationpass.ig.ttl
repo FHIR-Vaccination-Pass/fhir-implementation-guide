@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "VPImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-11T05:51:10+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-11T13:02:01+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -699,10 +699,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-dose-extension" ]
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-base-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vp-vaccination-dose-base-extension" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationDoseExtension" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationDoseBaseExtension" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 29;

@@ -441,9 +441,20 @@
       ]
     },
     {
-      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension",
-      "title": "VaccinationDoseExtension",
+      "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-base-extension",
+      "title": "VaccinationDoseBaseExtension",
       "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "boolean",
+        "markdown",
+        "Reference",
         "base64Binary",
         "boolean",
         "canonical",
@@ -500,6 +511,14 @@
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-repeating-extension",
       "title": "VaccinationDoseRepeatingExtension",
       "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
         "base64Binary",
         "boolean",
         "canonical",
@@ -556,6 +575,23 @@
       "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-single-extension",
       "title": "VaccinationDoseSingleExtension",
       "types": [
+        "unsignedInt",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
         "base64Binary",
         "boolean",
         "canonical",
@@ -834,14 +870,14 @@
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vacation-plan-extension": [
       "Basic"
     ],
-    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension": [
+    "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-base-extension": [
       "Basic"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-repeating-extension": [
-      "Extension"
+      "Basic"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-single-extension": [
-      "Extension"
+      "Basic"
     ],
     "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension": [
       "Basic"

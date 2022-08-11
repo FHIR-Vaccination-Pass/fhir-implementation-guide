@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>COM.GITHUB.FHIRVACCINATIONPASS.IG\ - FHIR v4.0.1</title>
+    <title>COM.GITHUB.FHIRVACCINATIONPASS.IG\VaccinationDoseBaseExtension - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"2.29"}
+    h3,h4,h5,h6{--heading-prefix:"2.29"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -98,7 +98,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>VaccinationDoseBaseExtension</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -110,8 +110,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<div style="counter-reset: section 5" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">VPImplementationGuide - Local Development build (v0.1.0). See the <a href="https://fhir-vaccination-pass.github.io/fhir-implementation-guide/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
@@ -129,20 +128,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-vp-vaccination-dose-extension.html">Content</a>
+    <a href="StructureDefinition-vp-vaccination-dose-base-extension.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-vp-vaccination-dose-extension-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-vp-vaccination-dose-base-extension-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
-    <li>
-      <a href="StructureDefinition-vp-vaccination-dose-extension-mappings.html">Mappings</a>
+    <li class="active">
+      <a href="#">Mappings</a>
     </li>
   
 
@@ -152,21 +151,21 @@
 
   
     <li>
-      <a href="StructureDefinition-vp-vaccination-dose-extension.profile.xml.html">XML</a>
+      <a href="StructureDefinition-vp-vaccination-dose-base-extension.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-vp-vaccination-dose-extension.profile.json.html">JSON</a>
+      <a href="StructureDefinition-vp-vaccination-dose-base-extension.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-vp-vaccination-dose-extension.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-vp-vaccination-dose-base-extension.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -174,8 +173,8 @@
 </ul>
 
 
-  <a name="root"> </a>
-  <h2 id="root">Extension: VPVaccinationDoseExtension - Change History</h2>
+<a name="root"> </a>
+<h2 id="root">Extension: VPVaccinationDoseBaseExtension - Mappings</h2>
   <table class="colsi">
     <tr>
 
@@ -191,9 +190,50 @@
     </tr>
   </table>
 
-  <p>Changes in the vp-vaccination-dose-extension extension.</p>
 
+<p>Mappings for the vp-vaccination-dose-base-extension extension.</p>
+
+  <!-- insert intro if present -->
   
+
+
+
+  <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>VPVaccinationDoseBaseExtension</b></td></tr>
+ <tr><td>Extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (doseQuantity)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;comparator</td><td>IVL properties</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unit</td><td>PQ.unit</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>CO.codeSystem, PQ.translation.codeSystem</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>PQ.code, MO.currency, PQ.translation.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (isProtected)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (notes)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension (vaccinationScheme)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
+</table>
+
+
+  <!-- insert notes if present -->
+  
+
+
 
 </div>
 
@@ -241,7 +281,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package com.github.fhirvaccinationpass.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 05:51+0000">2022-08-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package com.github.fhirvaccinationpass.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 11, 2022 13:02+0000">2022-08-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

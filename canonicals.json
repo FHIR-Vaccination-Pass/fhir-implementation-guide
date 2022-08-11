@@ -203,11 +203,11 @@
     "name": "VPVaccinationDose"
   },
   {
-    "id": "vp-vaccination-dose-extension",
+    "id": "vp-vaccination-dose-base-extension",
     "type": "StructureDefinition",
-    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-extension",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-base-extension",
     "version": "0.1.0",
-    "name": "VPVaccinationDoseExtension"
+    "name": "VPVaccinationDoseBaseExtension"
   },
   {
     "id": "vp-vaccination-dose-repeating-extension",

@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-08-11T05:51:10+00:00",
+  "date": "2022-08-11T13:02:01+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -715,9 +715,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/vp-vaccination-dose-extension"
+          "reference": "StructureDefinition/vp-vaccination-dose-base-extension"
         },
-        "name": "VaccinationDoseExtension",
+        "name": "VaccinationDoseBaseExtension",
         "exampleBoolean": false
       },
       {
