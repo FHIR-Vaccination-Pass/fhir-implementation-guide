@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "VPSupportingPopulationRecommendation"];
   fhir:StructureDefinition.title [ fhir:value "SupportingPopulationRecommendation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-11T13:55:21+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-12T19:53:56+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Example Publisher"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
