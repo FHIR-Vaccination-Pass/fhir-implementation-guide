@@ -4,6 +4,9 @@ Id: vp-active-vaccination-scheme
 Title: "ActiveVaccinationScheme"
 Description: "ActiveVaccinationScheme indicates which vaccination scheme is in use for a patient and target disease."
 * code 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * code = #ActiveVaccinationScheme
 * extension contains VPActiveVaccinationSchemeExtension named activeVaccinationSchemeExtension 1..1 MS
 
 Extension: VPActiveVaccinationSchemeExtension

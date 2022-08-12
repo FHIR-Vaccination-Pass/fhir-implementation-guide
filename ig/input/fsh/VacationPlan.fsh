@@ -7,6 +7,9 @@ Description: """
   indicated immunizations for the patient.
 """
 * code 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * code = #VacationPlan
 * extension contains VPVacationPlanExtension named vacationPlanExtension 1..1 MS
 
 Extension: VPVacationPlanExtension

@@ -7,6 +7,9 @@ Description: """
   disease.
 """
 * code 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * code = #VaccinationScheme
 * extension contains VPVaccinationSchemeExtension named vaccinationSchemeExtension 1..1 MS
 
 Extension: VPVaccinationSchemeExtension
