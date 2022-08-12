@@ -7,6 +7,9 @@ Description: """
   limited to locations where the disease is prevalent or to an age range of the patients.
 """
 * code 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * code = #PopulationRecommendation
 * extension contains VPPopulationRecommendationExtension named populationRecommendationExtension 1..1 MS
 
 

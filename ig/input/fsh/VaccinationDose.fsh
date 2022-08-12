@@ -4,6 +4,9 @@ Id: vp-vaccination-dose
 Title: "VaccinationDose"
 Description: "VaccinationDose models one of the doses of a vaccination given as part of a vaccination scheme."
 * code 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * code = #VaccinationDose
 * extension contains
   VPVaccinationDoseBaseExtension named base 1..1 MS and
   VPVaccinationDoseSingleExtension named singleDose 0..1 MS and
