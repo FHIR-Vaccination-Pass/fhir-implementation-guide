@@ -29,6 +29,9 @@ public class ActiveVaccinationSchemeTest {
                                         .build())
                                 .build())
                         .build())
+                .subject(Reference.builder()
+                        .reference("https://example.com/Patient/123")
+                        .build())
                 .extension(Extension.builder()
                         .url(BASE_URL + "vp-active-vaccination-scheme-extension")
                         .extension(
@@ -36,12 +39,6 @@ public class ActiveVaccinationSchemeTest {
                                         .url("vaccinationScheme")
                                         .value(Reference.builder()
                                                 .reference("https://example.com/Basic/123")
-                                                .build())
-                                        .build(),
-                                Extension.builder()
-                                        .url("patient")
-                                        .value(Reference.builder()
-                                                .reference("https://example.com/Patient/123")
                                                 .build())
                                         .build(),
                                 Extension.builder()

@@ -29,6 +29,9 @@ public class VaccinationDoseTest {
                                         .build())
                                 .build())
                         .build())
+                .subject(Reference.builder()
+                        .reference("https://example.com/Basic/VaccinationScheme123")
+                        .build())
                 .extension(Extension.builder()
                         .url(BASE_URL + "vp-vaccination-dose-base-extension")
                         .extension(
@@ -47,12 +50,6 @@ public class VaccinationDoseTest {
                                 Extension.builder()
                                         .url("notes")
                                         .value(Markdown.of("This is a note."))
-                                        .build(),
-                                Extension.builder()
-                                        .url("vaccinationScheme")
-                                        .value(Reference.builder()
-                                                .reference("https://example.com/Basic/123")
-                                                .build())
                                         .build()
                         )
                         .build())
