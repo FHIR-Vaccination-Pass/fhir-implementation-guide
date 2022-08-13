@@ -14,6 +14,7 @@
     <sch:rule context="f:Basic">
       <sch:assert test="count(f:extension[@url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension']) &gt;= 1">extension with URL = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension']) &lt;= 1">extension with URL = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

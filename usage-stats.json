@@ -8,7 +8,6 @@
       "title": "ActiveVaccinationSchemeExtension",
       "types": [
         "Reference",
-        "Reference",
         "markdown",
         "base64Binary",
         "boolean",
@@ -387,7 +386,6 @@
       "title": "VacationPlanExtension",
       "types": [
         "date",
-        "Reference",
         "base64Binary",
         "boolean",
         "canonical",
@@ -454,7 +452,6 @@
         "code",
         "boolean",
         "markdown",
-        "Reference",
         "base64Binary",
         "boolean",
         "canonical",
@@ -667,7 +664,6 @@
         "string",
         "uri",
         "code",
-        "Reference",
         "base64Binary",
         "boolean",
         "canonical",
