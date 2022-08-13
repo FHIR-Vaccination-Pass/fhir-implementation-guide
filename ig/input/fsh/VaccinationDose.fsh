@@ -7,6 +7,8 @@ Description: "VaccinationDose models one of the doses of a vaccination given as 
   * coding 1..1 MS
     * code 1..1 MS
     * code = #VaccinationDose
+* subject 1..1 MS
+* subject only Reference(VPVaccinationScheme)
 * extension contains
   VPVaccinationDoseBaseExtension named base 1..1 MS and
   VPVaccinationDoseSingleExtension named singleDose 0..1 MS and
@@ -20,8 +22,7 @@ Description: ""
 * extension contains
     doseQuantity 1..1 MS and
     isProtected 1..1 MS and
-    notes 0..1 MS and
-    vaccinationScheme 1..1 MS
+    notes 0..1 MS
 
 * extension[doseQuantity]
   * value[x] 1..1 MS
@@ -39,10 +40,6 @@ Description: ""
 * extension[notes]
   * value[x] 1..1 MS
   * value[x] only markdown
-
-* extension[vaccinationScheme]
-  * value[x] 1..1 MS
-  * value[x] only Reference(VPVaccinationScheme)
 
 Extension: VPVaccinationDoseSingleExtension
 Id: vp-vaccination-dose-single-extension

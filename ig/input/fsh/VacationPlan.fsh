@@ -10,6 +10,8 @@ Description: """
   * coding 1..1 MS
     * code 1..1 MS
     * code = #VacationPlan
+* subject 1..1 MS
+* subject only Reference(VPPatient)
 * extension contains VPVacationPlanExtension named vacationPlanExtension 1..1 MS
 
 Extension: VPVacationPlanExtension
@@ -17,14 +19,8 @@ Id: vp-vacation-plan-extension
 Title: "VacationPlanExtension"
 Description: ""
 * extension contains VPLocationExtension named location 1.. MS
-* extension contains
-    departureDate 1..1 MS and
-    patient 1..1 MS
+* extension contains departureDate 1..1 MS
 
 * extension[departureDate]
   * value[x] 1..1 MS
   * value[x] only date
-
-* extension[patient]
-  * value[x] 1..1 MS
-  * value[x] only Reference(VPPatient)

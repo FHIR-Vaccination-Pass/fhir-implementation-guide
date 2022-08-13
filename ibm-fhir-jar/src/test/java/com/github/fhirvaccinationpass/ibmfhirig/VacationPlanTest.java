@@ -29,6 +29,9 @@ public class VacationPlanTest {
                                         .build())
                                 .build())
                         .build())
+                .subject(Reference.builder()
+                        .reference("https://example.com/Patient/123")
+                        .build())
                 .extension(Extension.builder()
                         .url(BASE_URL + "vp-vacation-plan-extension")
                         .extension(Extension.builder()
@@ -52,18 +55,10 @@ public class VacationPlanTest {
                                                 .build())
                                         .build())
                                 .build())
-                        .extension(
-                                Extension.builder()
-                                        .url("departureDate")
-                                        .value(Date.of("2000-01-01"))
-                                        .build(),
-                                Extension.builder()
-                                        .url("patient")
-                                        .value(Reference.builder()
-                                                .reference("https://example.com/Patient/123")
-                                                .build())
-                                        .build()
-                        )
+                        .extension(Extension.builder()
+                                .url("departureDate")
+                                .value(Date.of("2000-01-01"))
+                                .build())
                         .build())
                 .build();
 

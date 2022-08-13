@@ -7,6 +7,8 @@ Description: "ActiveVaccinationScheme indicates which vaccination scheme is in u
   * coding 1..1 MS
     * code 1..1 MS
     * code = #ActiveVaccinationScheme
+* subject 1..1 MS
+* subject only Reference(VPPatient)
 * extension contains VPActiveVaccinationSchemeExtension named activeVaccinationSchemeExtension 1..1 MS
 
 Extension: VPActiveVaccinationSchemeExtension
@@ -15,16 +17,11 @@ Title: "ActiveVaccinationSchemeExtension"
 Description: ""
 * extension contains
     vaccinationScheme 1..1 MS and
-    patient 1..1 MS and
     changeReason 0..1 MS
 
 * extension[vaccinationScheme]
   * value[x] 1..1 MS
   * value[x] only Reference(VPVaccinationScheme)
-
-* extension[patient]
-  * value[x] 1..1 MS
-  * value[x] only Reference(VPPatient)
 
 * extension[changeReason]
   * value[x] 1..1 MS

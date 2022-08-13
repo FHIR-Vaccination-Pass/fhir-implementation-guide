@@ -10,6 +10,8 @@ Description: """
   * coding 1..1 MS
     * code 1..1 MS
     * code = #VaccinationScheme
+* subject 1..1 MS
+* subject only Reference(VPMedication)
 * extension contains VPVaccinationSchemeExtension named vaccinationSchemeExtension 1..1 MS
 
 Extension: VPVaccinationSchemeExtension
@@ -21,8 +23,7 @@ Description: ""
   type 1..1 MS and
   isPreferred 1..1 MS and
   ageStart 0..1 MS and
-  ageEnd 0..1 MS and
-  vaccine 1..1 MS
+  ageEnd 0..1 MS
 
 * extension[name]
   * value[x] 1..1 MS
@@ -56,10 +57,6 @@ Description: ""
     * code from http://hl7.org/fhir/ValueSet/age-units
     * system 1..1 MS
     * value 1..1 MS
-
-* extension[vaccine]
-  * value[x] 1..1 MS
-  * value[x] only Reference(VPMedication)
 
 
 CodeSystem: VPVaccinationSchemeType
