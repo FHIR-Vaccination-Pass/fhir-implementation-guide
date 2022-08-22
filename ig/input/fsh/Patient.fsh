@@ -51,3 +51,26 @@ Invariant: vp-address-use-home-must-exist-invariant
 Description: "At least one address has to be 'home'"
 Expression: "address.where(use = 'home').exists()"
 Severity: #error
+
+
+Instance: vp-patient-state-code-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "PatientStateCodeParameter"
+* status = #active
+* description = "Search for 'code' in Medication.address.state.extension.state"
+* base = #Patient
+* code = #stateCode
+* type = #token
+* expression = "address.state.extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-state-code-extension').value"
+
+Instance: vp-patient-country-code-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "PatientCountryCodeParameter"
+* status = #active
+* description = "Search for 'code' in Medication.address.country.extension.state"
+* base = #Patient
+* code = #countryCode
+* type = #token
+* expression = "address.country.extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-country-code-extension').value"

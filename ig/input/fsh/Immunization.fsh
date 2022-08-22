@@ -26,3 +26,15 @@ Title: "VPAdministeredVaccinationDose"
 Description: ""
 * value[x] 1..1 MS
 * value[x] only Reference(VPVaccinationDose)
+
+
+Instance: vp-immunization-administered-vaccination-dose-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "ImmunizationAdministeredVaccinationDoseParameter"
+* status = #active
+* description = "Search for 'administeredVaccinationDose' in Immunization."
+* base = #Immunization
+* code = #administeredVaccinationDose
+* type = #string
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-administered-vaccination-dose').value.reference"

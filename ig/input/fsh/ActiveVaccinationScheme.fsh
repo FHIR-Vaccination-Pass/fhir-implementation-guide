@@ -26,3 +26,15 @@ Description: ""
 * extension[changeReason]
   * value[x] 1..1 MS
   * value[x] only markdown
+
+
+Instance: vp-active-vaccination-scheme-to-scheme-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "ActiveVaccinationSchemeToSchemeParameter"
+* status = #active
+* description = "Search for 'vaccinationScheme' in ActiveVaccinationScheme."
+* base = #Basic
+* code = #activeVaccinationSchemeToScheme
+* type = #string
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme-extension').extension('vaccinationScheme').value.reference"

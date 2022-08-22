@@ -36,3 +36,15 @@ Description: "The ICD-10 code of a disease that is targeted by this medication."
   * coding 1.. MS
     * system 1..1 MS
     * code 1..1 MS
+
+
+Instance: vp-medication-target-disease-code-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "MedicationTargetDiseaseCodeParameter"
+* status = #active
+* description = "Search for 'code' in Medication.targetDiseases"
+* base = #Medication
+* code = #targetDiseaseCode
+* type = #token
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-medication-target-disease').value"

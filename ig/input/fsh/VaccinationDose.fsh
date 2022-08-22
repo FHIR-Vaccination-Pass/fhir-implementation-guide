@@ -101,3 +101,37 @@ Invariant: vp-vaccination-single-dose-timeframe-existance-invariant
 Description: "A single vaccination dose must have 'timeframeStart' and 'timeframeEnd' if its number in the scheme is bigger than 1."
 Expression: "(extension('numberInScheme').first().value <= 1 and extension('timeframeStart').empty() and extension('timeframeEnd').empty()) or (extension('numberInScheme').first().value >= 2 and extension('timeframeStart').exists() and extension('timeframeEnd').exists())"
 Severity: #error
+
+
+Instance: vp-vaccination-dose-is-single-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "VaccinationDoseIsSingleParameter"
+* status = #active
+* description = "Search for 'single' VaccinationDoses"
+* base = #Basic
+* code = #vaccinationDoseIsSingle
+* type = #token
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-single-extension').exists()"
+
+Instance: vp-vaccination-dose-is-repeating-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "VaccinationDoseIsRepeatingParameter"
+* status = #active
+* description = "Search for 'repeating' VaccinationDoses."
+* base = #Basic
+* code = #vaccinationDoseIsRepeating
+* type = #token
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-repeating-extension').exists()"
+
+Instance: vp-vaccination-dose-number-in-scheme-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "VaccinationDoseNumberInSchemeParameter"
+* status = #active
+* description = "Search for 'numberInScheme' in VaccinationDose."
+* base = #Basic
+* code = #vaccinationDoseNumberInScheme
+* type = #number
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-dose-single-extension').extension('numberInScheme').value"
