@@ -34,3 +34,15 @@ Description: ""
 * extension[description]
   * value[x] 1..1 MS
   * value[x] only markdown
+
+
+Instance: vp-target-disease-code-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "TargetDiseaseCodeParameter"
+* status = #active
+* description = "Search for 'code' in TargetDisease."
+* base = #Basic
+* code = #targetDiseaseCode
+* type = #token
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease-extension').extension('code').value"

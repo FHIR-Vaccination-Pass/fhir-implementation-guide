@@ -73,3 +73,26 @@ Id: vp-vaccination-scheme-type-value-set
 Title: "VaccinationSchemeTypeValueSet"
 Description: "Describes the type of a vaccination scheme such as standard, quick or repeating"
 * include codes from system VPVaccinationSchemeType
+
+
+Instance: vp-vaccination-scheme-type-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "VaccinationSchemeTypeParameter"
+* status = #active
+* description = "Search for 'type' in VaccinationScheme."
+* base = #Basic
+* code = #vaccinationSchemeType
+* type = #string
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension').extension('type').value"
+
+Instance: vp-vaccination-scheme-is-preferred-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "VaccinationSchemeIsPreferredParameter"
+* status = #active
+* description = "Search for 'isPreferred' in VaccinationScheme."
+* base = #Basic
+* code = #vaccinationSchemeIsPreferred
+* type = #token
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-vaccination-scheme-extension').extension('isPreferred').value"

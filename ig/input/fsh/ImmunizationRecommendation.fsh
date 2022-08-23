@@ -64,3 +64,48 @@ Title: "VPRecommendedVaccinationDose"
 Description: "VaccinationDose that has to be administered to fulfill this ImmunizationRecommendation."
 * value[x] 1..1 MS
 * value[x] only Reference(VPVaccinationDose)
+
+
+Instance: vp-immunization-recommendation-is-deactivated-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "ImmunizationRecommendationIsDeactivatedParameter"
+* status = #active
+* description = "Search for 'isDeactivated' in ImmunizationRecommendation."
+* base = #ImmunizationRecommendation
+* code = #isDeactivated
+* type = #token
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-immunization-recommendation-is-deactivated').value"
+
+Instance: vp-immunization-recommendation-fulfilling-immunization-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "ImmunizationRecommendationFulfillingImmunizationParameter"
+* status = #active
+* description = "Search for 'fulfillingImmunization' in ImmunizationRecommendation."
+* base = #ImmunizationRecommendation
+* code = #fulfillingImmunization
+* type = #string
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-fulfilling-immunization').value.reference"
+
+Instance: vp-immunization-recommendation-supporting-pop-rec-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "ImmunizationRecommendationSupportingPopulationRecommendationParameter"
+* status = #active
+* description = "Search for 'supportingPopulationRecommendation' in ImmunizationRecommendation."
+* base = #ImmunizationRecommendation
+* code = #supportingPopulationRecommendation
+* type = #string
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-supporting-population-recommendation').value.reference"
+
+Instance: vp-immunization-recommendation-reccommended-vac-dose-parameter
+InstanceOf: SearchParameter
+Usage: #definition
+* name = "ImmunizationRecommendationRecommendedVaccinationDoseParameter"
+* status = #active
+* description = "Search for 'recommendedVaccinationDose' in ImmunizationRecommendation."
+* base = #ImmunizationRecommendation
+* code = #recommendedVaccinationDose
+* type = #string
+* expression = "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-recommended-vaccination-dose').value.reference"
