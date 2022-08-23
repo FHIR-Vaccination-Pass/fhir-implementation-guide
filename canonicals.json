@@ -14,6 +14,111 @@
     "name": "VPImplementationGuide"
   },
   {
+    "id": "vp-active-vaccination-scheme-to-scheme-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-active-vaccination-scheme-to-scheme-parameter",
+    "version": "0.1.0",
+    "name": "ActiveVaccinationSchemeToSchemeParameter"
+  },
+  {
+    "id": "vp-immunization-administered-vaccination-dose-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-administered-vaccination-dose-parameter",
+    "version": "0.1.0",
+    "name": "ImmunizationAdministeredVaccinationDoseParameter"
+  },
+  {
+    "id": "vp-immunization-recommendation-fulfilling-immunization-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-fulfilling-immunization-parameter",
+    "version": "0.1.0",
+    "name": "ImmunizationRecommendationFulfillingImmunizationParameter"
+  },
+  {
+    "id": "vp-immunization-recommendation-is-deactivated-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-is-deactivated-parameter",
+    "version": "0.1.0",
+    "name": "ImmunizationRecommendationIsDeactivatedParameter"
+  },
+  {
+    "id": "vp-immunization-recommendation-reccommended-vac-dose-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter",
+    "version": "0.1.0",
+    "name": "ImmunizationRecommendationRecommendedVaccinationDoseParameter"
+  },
+  {
+    "id": "vp-immunization-recommendation-supporting-pop-rec-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-supporting-pop-rec-parameter",
+    "version": "0.1.0",
+    "name": "ImmunizationRecommendationSupportingPopulationRecommendationParameter"
+  },
+  {
+    "id": "vp-medication-target-disease-code-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-medication-target-disease-code-parameter",
+    "version": "0.1.0",
+    "name": "MedicationTargetDiseaseCodeParameter"
+  },
+  {
+    "id": "vp-patient-country-code-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-patient-country-code-parameter",
+    "version": "0.1.0",
+    "name": "PatientCountryCodeParameter"
+  },
+  {
+    "id": "vp-patient-state-code-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-patient-state-code-parameter",
+    "version": "0.1.0",
+    "name": "PatientStateCodeParameter"
+  },
+  {
+    "id": "vp-target-disease-code-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-target-disease-code-parameter",
+    "version": "0.1.0",
+    "name": "TargetDiseaseCodeParameter"
+  },
+  {
+    "id": "vp-vaccination-dose-is-repeating-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-dose-is-repeating-parameter",
+    "version": "0.1.0",
+    "name": "VaccinationDoseIsRepeatingParameter"
+  },
+  {
+    "id": "vp-vaccination-dose-is-single-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-dose-is-single-parameter",
+    "version": "0.1.0",
+    "name": "VaccinationDoseIsSingleParameter"
+  },
+  {
+    "id": "vp-vaccination-dose-number-in-scheme-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-dose-number-in-scheme-parameter",
+    "version": "0.1.0",
+    "name": "VaccinationDoseNumberInSchemeParameter"
+  },
+  {
+    "id": "vp-vaccination-scheme-is-preferred-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-scheme-is-preferred-parameter",
+    "version": "0.1.0",
+    "name": "VaccinationSchemeIsPreferredParameter"
+  },
+  {
+    "id": "vp-vaccination-scheme-type-parameter",
+    "type": "SearchParameter",
+    "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-scheme-type-parameter",
+    "version": "0.1.0",
+    "name": "VaccinationSchemeTypeParameter"
+  },
+  {
     "id": "vp-active-vaccination-scheme",
     "type": "StructureDefinition",
     "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme",

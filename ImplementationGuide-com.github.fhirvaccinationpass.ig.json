@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "VPImplementationGuide",
   "status": "draft",
-  "date": "2022-08-13T11:44:57+00:00",
+  "date": "2022-08-23T12:16:54+00:00",
   "publisher": "Example Publisher",
   "contact": [
     {
@@ -811,6 +811,216 @@
         },
         "name": "VaccinationSchemeType",
         "description": "Describes the type of a vaccination scheme such as standard, quick or repeating",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-active-vaccination-scheme-to-scheme-parameter"
+        },
+        "name": "vp-active-vaccination-scheme-to-scheme-parameter",
+        "description": "Search for 'vaccinationScheme' in ActiveVaccinationScheme.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-immunization-administered-vaccination-dose-parameter"
+        },
+        "name": "vp-immunization-administered-vaccination-dose-parameter",
+        "description": "Search for 'administeredVaccinationDose' in Immunization.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-immunization-recommendation-fulfilling-immunization-parameter"
+        },
+        "name": "vp-immunization-recommendation-fulfilling-immunization-parameter",
+        "description": "Search for 'fulfillingImmunization' in ImmunizationRecommendation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-immunization-recommendation-is-deactivated-parameter"
+        },
+        "name": "vp-immunization-recommendation-is-deactivated-parameter",
+        "description": "Search for 'isDeactivated' in ImmunizationRecommendation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter"
+        },
+        "name": "vp-immunization-recommendation-reccommended-vac-dose-parameter",
+        "description": "Search for 'recommendedVaccinationDose' in ImmunizationRecommendation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-immunization-recommendation-supporting-pop-rec-parameter"
+        },
+        "name": "vp-immunization-recommendation-supporting-pop-rec-parameter",
+        "description": "Search for 'supportingPopulationRecommendation' in ImmunizationRecommendation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-medication-target-disease-code-parameter"
+        },
+        "name": "vp-medication-target-disease-code-parameter",
+        "description": "Search for 'code' in Medication.targetDiseases",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-patient-country-code-parameter"
+        },
+        "name": "vp-patient-country-code-parameter",
+        "description": "Search for 'code' in Medication.address.country.extension.state",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-patient-state-code-parameter"
+        },
+        "name": "vp-patient-state-code-parameter",
+        "description": "Search for 'code' in Medication.address.state.extension.state",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-target-disease-code-parameter"
+        },
+        "name": "vp-target-disease-code-parameter",
+        "description": "Search for 'code' in TargetDisease.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-vaccination-dose-is-repeating-parameter"
+        },
+        "name": "vp-vaccination-dose-is-repeating-parameter",
+        "description": "Search for 'repeating' VaccinationDoses.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-vaccination-dose-is-single-parameter"
+        },
+        "name": "vp-vaccination-dose-is-single-parameter",
+        "description": "Search for 'single' VaccinationDoses",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-vaccination-dose-number-in-scheme-parameter"
+        },
+        "name": "vp-vaccination-dose-number-in-scheme-parameter",
+        "description": "Search for 'numberInScheme' in VaccinationDose.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-vaccination-scheme-is-preferred-parameter"
+        },
+        "name": "vp-vaccination-scheme-is-preferred-parameter",
+        "description": "Search for 'isPreferred' in VaccinationScheme.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/vp-vaccination-scheme-type-parameter"
+        },
+        "name": "vp-vaccination-scheme-type-parameter",
+        "description": "Search for 'type' in VaccinationScheme.",
         "exampleBoolean": false
       }
     ],

@@ -1,0 +1,32 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "vp-target-disease-code-parameter",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"vp-target-disease-code-parameter\" </p></div><p><b>url</b>: <code>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-target-disease-code-parameter</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: TargetDiseaseCodeParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-08-23 12:16:54+0000</p><p><b>publisher</b>: Example Publisher</p><p><b>contact</b>: Example Publisher: <a href=\"http://example.org/example-publisher\">http://example.org/example-publisher</a></p><p><b>description</b>: Search for 'code' in TargetDisease.</p><p><b>code</b>: targetDiseaseCode</p><p><b>base</b>: Basic</p><p><b>type</b>: token</p><p><b>expression</b>: extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease-extension').extension('code').value</p></div>"
+  },
+  "url": "https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-target-disease-code-parameter",
+  "version": "0.1.0",
+  "name": "TargetDiseaseCodeParameter",
+  "status": "active",
+  "date": "2022-08-23T12:16:54+00:00",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "description": "Search for 'code' in TargetDisease.",
+  "code": "targetDiseaseCode",
+  "base": [
+    "Basic"
+  ],
+  "type": "token",
+  "expression": "extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-target-disease-extension').extension('code').value"
+}

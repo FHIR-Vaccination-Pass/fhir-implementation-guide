@@ -126,16 +126,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Behavior: Search Parameters</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -144,6 +147,153 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Search Parameters </h3>
+   <p>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-active-vaccination-scheme-to-scheme-parameter.html"
+                     title="SearchParameter/vp-active-vaccination-scheme-to-scheme-parameter">vp-active-vaccination-scheme-to-scheme-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘vaccinationScheme’ in ActiveVaccinationScheme.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-immunization-administered-vaccination-dose-parameter.html"
+                     title="SearchParameter/vp-immunization-administered-vaccination-dose-parameter">vp-immunization-administered-vaccination-dose-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘administeredVaccinationDose’ in Immunization.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-immunization-recommendation-fulfilling-immunization-parameter.html"
+                     title="SearchParameter/vp-immunization-recommendation-fulfilling-immunization-parameter">vp-immunization-recommendation-fulfilling-immunization-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘fulfillingImmunization’ in ImmunizationRecommendation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-immunization-recommendation-is-deactivated-parameter.html"
+                     title="SearchParameter/vp-immunization-recommendation-is-deactivated-parameter">vp-immunization-recommendation-is-deactivated-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘isDeactivated’ in ImmunizationRecommendation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-immunization-recommendation-reccommended-vac-dose-parameter.html"
+                     title="SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter">vp-immunization-recommendation-reccommended-vac-dose-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘recommendedVaccinationDose’ in ImmunizationRecommendation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-immunization-recommendation-supporting-pop-rec-parameter.html"
+                     title="SearchParameter/vp-immunization-recommendation-supporting-pop-rec-parameter">vp-immunization-recommendation-supporting-pop-rec-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘supportingPopulationRecommendation’ in ImmunizationRecommendation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-medication-target-disease-code-parameter.html"
+                     title="SearchParameter/vp-medication-target-disease-code-parameter">vp-medication-target-disease-code-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘code’ in Medication.targetDiseases</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-patient-country-code-parameter.html"
+                     title="SearchParameter/vp-patient-country-code-parameter">vp-patient-country-code-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘code’ in Medication.address.country.extension.state</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-patient-state-code-parameter.html"
+                     title="SearchParameter/vp-patient-state-code-parameter">vp-patient-state-code-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘code’ in Medication.address.state.extension.state</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-target-disease-code-parameter.html"
+                     title="SearchParameter/vp-target-disease-code-parameter">vp-target-disease-code-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘code’ in TargetDisease.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-vaccination-dose-is-repeating-parameter.html"
+                     title="SearchParameter/vp-vaccination-dose-is-repeating-parameter">vp-vaccination-dose-is-repeating-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘repeating’ VaccinationDoses.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-vaccination-dose-is-single-parameter.html"
+                     title="SearchParameter/vp-vaccination-dose-is-single-parameter">vp-vaccination-dose-is-single-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘single’ VaccinationDoses</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-vaccination-dose-number-in-scheme-parameter.html"
+                     title="SearchParameter/vp-vaccination-dose-number-in-scheme-parameter">vp-vaccination-dose-number-in-scheme-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘numberInScheme’ in VaccinationDose.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-vaccination-scheme-is-preferred-parameter.html"
+                     title="SearchParameter/vp-vaccination-scheme-is-preferred-parameter">vp-vaccination-scheme-is-preferred-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘isPreferred’ in VaccinationScheme.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-vp-vaccination-scheme-type-parameter.html"
+                     title="SearchParameter/vp-vaccination-scheme-type-parameter">vp-vaccination-scheme-type-parameter</a>
+               </td>
+               <td>
+<p>Search for ‘type’ in VaccinationScheme.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -266,7 +416,7 @@ disease.</p>
          </tbody>
       </table>
    </p>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
@@ -458,7 +608,7 @@ disease.</p>
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -497,7 +647,7 @@ disease.</p>
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -542,7 +692,7 @@ disease.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package com.github.fhirvaccinationpass.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Aug 13, 2022 11:44+0000">2022-08-13</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package com.github.fhirvaccinationpass.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 23, 2022 12:16+0000">2022-08-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

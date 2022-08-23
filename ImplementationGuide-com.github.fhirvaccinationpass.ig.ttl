@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "VPImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-13T11:44:57+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-23T12:16:54+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Example Publisher"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -796,6 +796,216 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "VaccinationSchemeType" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the type of a vaccination scheme such as standard, quick or repeating" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-active-vaccination-scheme-to-scheme-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-active-vaccination-scheme-to-scheme-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-active-vaccination-scheme-to-scheme-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'vaccinationScheme' in ActiveVaccinationScheme." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-administered-vaccination-dose-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-immunization-administered-vaccination-dose-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-immunization-administered-vaccination-dose-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'administeredVaccinationDose' in Immunization." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-fulfilling-immunization-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-immunization-recommendation-fulfilling-immunization-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-immunization-recommendation-fulfilling-immunization-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'fulfillingImmunization' in ImmunizationRecommendation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-is-deactivated-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-immunization-recommendation-is-deactivated-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-immunization-recommendation-is-deactivated-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'isDeactivated' in ImmunizationRecommendation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-immunization-recommendation-reccommended-vac-dose-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'recommendedVaccinationDose' in ImmunizationRecommendation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-supporting-pop-rec-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-immunization-recommendation-supporting-pop-rec-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-immunization-recommendation-supporting-pop-rec-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'supportingPopulationRecommendation' in ImmunizationRecommendation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-medication-target-disease-code-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-medication-target-disease-code-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-medication-target-disease-code-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'code' in Medication.targetDiseases" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-patient-country-code-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-patient-country-code-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-patient-country-code-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'code' in Medication.address.country.extension.state" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-patient-state-code-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-patient-state-code-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-patient-state-code-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'code' in Medication.address.state.extension.state" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-target-disease-code-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-target-disease-code-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-target-disease-code-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'code' in TargetDisease." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-dose-is-repeating-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-vaccination-dose-is-repeating-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-vaccination-dose-is-repeating-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'repeating' VaccinationDoses." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-dose-is-single-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-vaccination-dose-is-single-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-vaccination-dose-is-single-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'single' VaccinationDoses" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-dose-number-in-scheme-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-vaccination-dose-number-in-scheme-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-vaccination-dose-number-in-scheme-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'numberInScheme' in VaccinationDose." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-scheme-is-preferred-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-vaccination-scheme-is-preferred-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-vaccination-scheme-is-preferred-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'isPreferred' in VaccinationScheme." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-vaccination-scheme-type-parameter>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/vp-vaccination-scheme-type-parameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "vp-vaccination-scheme-type-parameter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Search for 'type' in VaccinationScheme." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

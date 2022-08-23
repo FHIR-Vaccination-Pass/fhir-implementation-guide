@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="VPImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-08-13T11:44:57+00:00"/>
+  <date value="2022-08-23T12:16:54+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -581,6 +581,171 @@
       </reference>
       <name value="VaccinationSchemeType"/>
       <description value="Describes the type of a vaccination scheme such as standard, quick or repeating"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-active-vaccination-scheme-to-scheme-parameter"/>
+      </reference>
+      <name value="vp-active-vaccination-scheme-to-scheme-parameter"/>
+      <description value="Search for 'vaccinationScheme' in ActiveVaccinationScheme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-immunization-administered-vaccination-dose-parameter"/>
+      </reference>
+      <name value="vp-immunization-administered-vaccination-dose-parameter"/>
+      <description value="Search for 'administeredVaccinationDose' in Immunization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-immunization-recommendation-fulfilling-immunization-parameter"/>
+      </reference>
+      <name value="vp-immunization-recommendation-fulfilling-immunization-parameter"/>
+      <description value="Search for 'fulfillingImmunization' in ImmunizationRecommendation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-immunization-recommendation-is-deactivated-parameter"/>
+      </reference>
+      <name value="vp-immunization-recommendation-is-deactivated-parameter"/>
+      <description value="Search for 'isDeactivated' in ImmunizationRecommendation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter"/>
+      </reference>
+      <name value="vp-immunization-recommendation-reccommended-vac-dose-parameter"/>
+      <description value="Search for 'recommendedVaccinationDose' in ImmunizationRecommendation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-immunization-recommendation-supporting-pop-rec-parameter"/>
+      </reference>
+      <name value="vp-immunization-recommendation-supporting-pop-rec-parameter"/>
+      <description value="Search for 'supportingPopulationRecommendation' in ImmunizationRecommendation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-medication-target-disease-code-parameter"/>
+      </reference>
+      <name value="vp-medication-target-disease-code-parameter"/>
+      <description value="Search for 'code' in Medication.targetDiseases"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-patient-country-code-parameter"/>
+      </reference>
+      <name value="vp-patient-country-code-parameter"/>
+      <description value="Search for 'code' in Medication.address.country.extension.state"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-patient-state-code-parameter"/>
+      </reference>
+      <name value="vp-patient-state-code-parameter"/>
+      <description value="Search for 'code' in Medication.address.state.extension.state"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-target-disease-code-parameter"/>
+      </reference>
+      <name value="vp-target-disease-code-parameter"/>
+      <description value="Search for 'code' in TargetDisease."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-vaccination-dose-is-repeating-parameter"/>
+      </reference>
+      <name value="vp-vaccination-dose-is-repeating-parameter"/>
+      <description value="Search for 'repeating' VaccinationDoses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-vaccination-dose-is-single-parameter"/>
+      </reference>
+      <name value="vp-vaccination-dose-is-single-parameter"/>
+      <description value="Search for 'single' VaccinationDoses"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-vaccination-dose-number-in-scheme-parameter"/>
+      </reference>
+      <name value="vp-vaccination-dose-number-in-scheme-parameter"/>
+      <description value="Search for 'numberInScheme' in VaccinationDose."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-vaccination-scheme-is-preferred-parameter"/>
+      </reference>
+      <name value="vp-vaccination-scheme-is-preferred-parameter"/>
+      <description value="Search for 'isPreferred' in VaccinationScheme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/vp-vaccination-scheme-type-parameter"/>
+      </reference>
+      <name value="vp-vaccination-scheme-type-parameter"/>
+      <description value="Search for 'type' in VaccinationScheme."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

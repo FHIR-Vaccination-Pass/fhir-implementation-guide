@@ -3,10 +3,25 @@
 
 err = 0, warn = 54, info = 1
 IG Publisher Version: 1.1.128
-Generated Sat Aug 13 11:45:40 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
+Generated Tue Aug 23 12:17:39 UTC 2022. FHIR version 4.0.1 for com.github.fhirvaccinationpass.ig#0.1.0 (canonical = https://fhir-vaccination-pass.github.io/fhir-implementation-guide)
  Build Errors : 0 / 16 / 0
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/CodeSystem-vp-vaccination-scheme-type : 0 / 0 / 2
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-active-vaccination-scheme-to-scheme-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-immunization-administered-vaccination-dose-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-immunization-recommendation-fulfilling-immunization-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-immunization-recommendation-is-deactivated-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-immunization-recommendation-reccommended-vac-dose-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-immunization-recommendation-supporting-pop-rec-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-medication-target-disease-code-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-patient-country-code-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-patient-state-code-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-target-disease-code-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-vaccination-dose-is-repeating-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-vaccination-dose-is-single-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-vaccination-dose-number-in-scheme-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-vaccination-scheme-is-preferred-parameter : 0 / 0 / 1
+ /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/SearchParameter-vp-vaccination-scheme-type-parameter : 0 / 0 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme-extension : 0 / 1 / 1
  /home/runner/work/fhir-implementation-guide/fhir-implementation-guide/ig/fsh-generated/resources/StructureDefinition-vp-administered-vaccination-dose : 0 / 1 / 1
@@ -63,6 +78,21 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 == fsh-generated/resources/CodeSystem-vp-vaccination-scheme-type.json ==
 INFORMATION: CodeSystem/vp-vaccination-scheme-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/ImplementationGuide-com.github.fhirvaccinationpass.ig.json ==
+== fsh-generated/resources/SearchParameter-vp-active-vaccination-scheme-to-scheme-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-immunization-administered-vaccination-dose-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-immunization-recommendation-fulfilling-immunization-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-immunization-recommendation-is-deactivated-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-immunization-recommendation-reccommended-vac-dose-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-immunization-recommendation-supporting-pop-rec-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-medication-target-disease-code-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-patient-country-code-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-patient-state-code-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-target-disease-code-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-vaccination-dose-is-repeating-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-vaccination-dose-is-single-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-vaccination-dose-number-in-scheme-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-vaccination-scheme-is-preferred-parameter.json ==
+== fsh-generated/resources/SearchParameter-vp-vaccination-scheme-type-parameter.json ==
 == fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme.json ==
 WARNING: StructureDefinition.where(url = 'https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-active-vaccination-scheme'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-vp-active-vaccination-scheme-extension.json ==

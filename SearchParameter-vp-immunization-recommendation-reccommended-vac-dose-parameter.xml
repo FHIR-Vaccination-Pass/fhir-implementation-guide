@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="vp-immunization-recommendation-reccommended-vac-dose-parameter"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: SearchParameter</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource SearchParameter "vp-immunization-recommendation-reccommended-vac-dose-parameter" </p></div><p><b>url</b>: <code>https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: ImmunizationRecommendationRecommendedVaccinationDoseParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-08-23 12:16:54+0000</p><p><b>publisher</b>: Example Publisher</p><p><b>contact</b>: Example Publisher: <a href="http://example.org/example-publisher">http://example.org/example-publisher</a></p><p><b>description</b>: Search for 'recommendedVaccinationDose' in ImmunizationRecommendation.</p><p><b>code</b>: recommendedVaccinationDose</p><p><b>base</b>: ImmunizationRecommendation</p><p><b>type</b>: string</p><p><b>expression</b>: extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-recommended-vaccination-dose').value.reference</p></div>
+  </text>
+  <url value="https://fhir-vaccination-pass.github.io/fhir-implementation-guide/SearchParameter/vp-immunization-recommendation-reccommended-vac-dose-parameter"/>
+  <version value="0.1.0"/>
+  <name value="ImmunizationRecommendationRecommendedVaccinationDoseParameter"/>
+  <status value="active"/>
+  <date value="2022-08-23T12:16:54+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Search for 'recommendedVaccinationDose' in ImmunizationRecommendation."/>
+  <code value="recommendedVaccinationDose"/>
+  <base value="ImmunizationRecommendation"/>
+  <type value="string"/>
+  <expression value="extension('https://fhir-vaccination-pass.github.io/fhir-implementation-guide/StructureDefinition/vp-recommended-vaccination-dose').value.reference"/>
+</SearchParameter>
